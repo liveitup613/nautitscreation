@@ -301,7 +301,13 @@
                     <div class="col text-center xs-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.3s">
                         <i class="feather icon-feather-mail icon-small text-golden margin-25px-bottom sm-margin-10px-bottom d-block"></i>
                         <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">Email</div>
-                        <p class="lg-w-100 sm-margin-10px-bottom mx-auto"><a href="NautiTs@nautitscreations.com" class="text-golden-hover"><?php echo $Contact[2]['Value'];?></a></p>
+                        <p class="lg-w-100 sm-margin-10px-bottom mx-auto">
+                            <?php                                
+                                $emails = explode(",", $Contact[2]['Value']);
+                                foreach($emails as $email) 
+                                    echo '<a href="mailto:'.$email.'" class="text-golden-hover">' . $email . '</a>';
+                            ?>
+                        </p>
                     </div>
                     <!-- end feature box item -->
                     <!-- start feature box item -->

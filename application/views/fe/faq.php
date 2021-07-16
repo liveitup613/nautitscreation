@@ -199,7 +199,13 @@
                             <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Get in touch</span>
                             <p class="w-85 margin-15px-bottom"><?php echo $Contact[0]['Value'];?></p>
                             <div><i class="feather icon-feather-phone-call icon-very-small margin-10px-right text-white"></i><?php echo $Contact[1]['Value'];?></div>
-                            <div><i class="feather icon-feather-mail icon-very-small margin-10px-right text-white"></i><a href="#"><?php echo $Contact[2]['Value'];?></a></div>
+                            <div>
+                            <?php                                
+                                $emails = explode(",", $Contact[2]['Value']);
+                                foreach($emails as $email) 
+                                    echo '<i class="feather icon-feather-mail icon-very-small margin-10px-right text-white"></i><a href="mailto:'.$email.'" class="text-golden-hover">' . trim($email) . '</a><br>';
+                            ?>
+                            </div>
                         </div>
                         <!-- end footer column -->
                         <!-- start footer column -->
