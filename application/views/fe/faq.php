@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="author" content="ThemeZaa">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
-        <meta name="description" content="Litho is a clean and modern design, BootStrap 4 responsive, business and portfolio multipurpose HTML5 template with 36+ ready homepage demos.">
+        <meta name="description" content="It's NOT just jelly, it's a CREATION">
         <!-- favicon icon -->
         <link rel="shortcut icon" href="images/favicon.svg">
         <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
