@@ -220,7 +220,7 @@
                             <div class="alt-font text-extra-medium text-golden padding-10px-lr">Featured Items</div>
                             <span class="w-25px h-1px bg-golden opacity-4"></span>
                         </div>
-                        <h5 class="alt-font font-weight-600 text-extra-dark-gray text-uppercase letter-spacing-minus-1px">Explore our wide selection tdoay</h5>
+                        <h5 class="alt-font font-weight-600 text-extra-dark-gray text-uppercase letter-spacing-minus-1px">Explore our wide selection today</h5>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center">
