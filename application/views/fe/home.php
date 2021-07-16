@@ -287,7 +287,7 @@
                     <div class="col text-center md-margin-40px-bottom last-paragraph-no-margin wow animate__fadeIn" data-wow-delay="0.1s">
                         <i class="feather icon-feather-map-pin icon-small text-golden margin-25px-bottom sm-margin-10px-bottom d-block"></i>
                         <div class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">Contact us</div>
-                        <p class="w-70 lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto"><?php echo $Contact[0]['Value'];?></p>
+                        <p class="lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto"><?php echo $Contact[0]['Value'];?></p>
                     </div>
                     <!-- end feature box item -->
                     <!-- start feature box item -->
