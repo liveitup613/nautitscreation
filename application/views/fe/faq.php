@@ -104,7 +104,9 @@
                     <div class="col-12 col-lg-12 md-margin-50px-bottom sm-margin-30px-bottom wow animate__fadeIn">
                         <div class="panel-group accordion-event accordion-style-03" id="accordion2" data-active-icon="fa-angle-down" data-inactive-icon="fa-angle-right">                                                    
                             <?php
+                            $count = 0;
                             foreach ($faqs as $row) {
+                                $count++;
                                 ?>
                             <!-- start accordion item -->
                             <div class="panel bg-white box-shadow-small border-radius-5px">
@@ -116,7 +118,7 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div id="collapseOne" class="panel-collapse collapse show" data-parent="#accordion2">
+                                <div id="collapseOne" class="panel-collapse collapse <?php echo ($count == 1 ? 'show' : '');?>" data-parent="#accordion2">
                                     <div class="panel-body"><?php echo $row['Value'];?></div>
                                 </div>
                             </div>
