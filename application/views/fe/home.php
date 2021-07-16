@@ -79,7 +79,7 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-8 col-md-10 col-lg-8 full-screen flex-column d-flex justify-content-center text-center md-landscape-h-600px">
                         <div class="border-color-golden-transparent border-all border-width-8px padding-3-half-rem-all lg-padding-4-half-rem-all xs-padding-2-rem-all">                            
-                            <h1 class="title-medium alt-font font-weight-600 text-white text-uppercase letter-spacing-minus-4px margin-3-half-rem-bottom mx-auto sm-letter-spacing-minus-1px">Welcome to<br /><br /> Nauti T's Creations LLC</h1>
+                            <h1 class="title-medium alt-font font-weight-600 text-white text-uppercase letter-spacing-minus-4px margin-3-half-rem-bottom mx-auto sm-letter-spacing-minus-1px">Welcome to<br /><br /> Nauti T's Creations</h1>
                             <span class="alt-font text-medium text-uppercase letter-spacing-3px text-white opacity-7 d-block">It's not just jelly, it's a creation</span>
                         </div>
                     </div>
