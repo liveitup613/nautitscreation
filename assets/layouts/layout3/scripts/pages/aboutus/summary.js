@@ -1,21 +1,20 @@
 $('#btnUpdate').click(function() {
     $.ajax({
-        url : base_url + 'api/aboutus/updateSummary',
+        url : base_url + 'api/aboutus/udpateJourney',
         type : 'post',
-        data : {
-            First : $('#First').val(),
-            Second : $('#Second').val(),
+        data : {            
+            Journey : $('#Journey').val(),
         },
         success: function(res) {
             var data = JSON.parse(res);
 
             if (data.success == true)
-                showSuccessToastr('Update AboutUs Summary');
+                showSuccessToastr('Update Our Journey');
             else 
-                showErrorToastr('Update AboutUs Summary');
+                showErrorToastr('Update Our Journey');
         },
         error : function(err) {
-            showErrorToastr('Update AboutUs Summary');
+            showErrorToastr('Update Our Journey');
         }
     })
 });

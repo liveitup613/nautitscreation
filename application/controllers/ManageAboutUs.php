@@ -49,4 +49,32 @@ class ManageAboutUs extends CI_Controller {
 		$data['LocalStores'] = $this->Value_model->getRowsByType('Local Store');
 		$this->load->view('be/aboutus/local-store', $data);
 	}
+
+	public function our_journey() {		
+		$this->db->select('*');
+		$this->db->where('Type', 'Our Journey');
+		$this->db->from('tblvalues');
+		$ret = $this->db->get()->row_array();
+
+		if ($ret == NULL)
+			$data['Journey'] = "";
+		else {
+			$breaks = array("<br />","<br>","<br/>");  
+    		$text = str_ireplace($breaks, "", $ret['Value']);  
+			$data['Journey'] = $text;
+		}
+
+		$this->load->view('be/aboutus/our-journey', $data);
+	}
+
+	public function udpateJourney() {
+		$Journey = nl2br($this->input->post('Journey'));
+
+		$this->db->where('Type', 'Our Journey');
+		$this->db->update('tblvalues', array('Value' => $Journey));
+
+		echo json_encode(array(
+			'success' => true
+		));
+	}
 }

@@ -64,6 +64,7 @@ $route['tutorial'] = 'home/tutorial';
 
 $route['admin'] = 'manageLogin';
 $route['admin/home/guestbook'] = 'manageHome';
+$route['admin/about-us/our-journey'] = 'manageAboutUs/our_journey';
 $route['admin/about-us/local-store'] = 'manageAboutUs/local_store';
 $route['admin/about-us/ingredient-resources'] = 'manageAboutUs/ingredient_resources';
 $route['admin/media/photos'] = 'manageMedia/photos';
@@ -87,6 +88,8 @@ $route['api/value/get'] = 'manageHome/getValue';
 $route['api/value/add'] = 'manageHome/addValue';
 $route['api/value/update'] = 'manageHome/updateValue';
 $route['api/value/delete'] = 'manageHome/deleteValue';
+
+$route['api/aboutus/udpateJourney'] = 'manageAboutUs/udpateJourney';
 
 $route['api/resource/add'] = 'manageHome/addResource';
 $route['api/resource/get'] = 'manageHome/getResource';

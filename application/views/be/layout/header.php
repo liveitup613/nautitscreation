@@ -56,7 +56,10 @@
                     </li>
                     <li class="menu-dropdown classic-menu-dropdown <?php echo ($parent == 'about-us' ? 'active' : '');?>">
                         <a href="javascript:;"> About Us </a> 
-                        <ul class="dropdown-menu pull-left">                            
+                        <ul class="dropdown-menu pull-left"> 
+                            <li class="<?php echo ($current == 'Our Journey' ? 'active' : '');?>">
+                                <a href="<?php echo base_url('admin/about-us/our-journey');?>" class="nav-link">Our Journey</a>
+                            </li>                         
                             <li class="<?php echo ($current == 'Local Store' ? 'active' : '');?>">
                                 <a href="<?php echo base_url('admin/about-us/local-store');?>" class="nav-link">Local Store</a>
                             </li>

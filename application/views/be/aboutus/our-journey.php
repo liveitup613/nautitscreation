@@ -25,7 +25,7 @@
         <!-- BEGIN HEADER -->           
         <?php 
             $menu['parent'] = 'about-us';
-            $menu['current'] = 'summary';
+            $menu['current'] = 'Our Journey';
             $this->load->view('be/layout/header', $menu);
             ?>
         <!-- END HEADER -->
@@ -40,7 +40,7 @@
                     <div class="container">
                         <!-- BEGIN PAGE TITLE -->
                         <div class="page-title">
-                            <h1>Summary                                
+                            <h1>Our Journey                                
                             </h1>
                         </div>
                         <!-- END PAGE TITLE -->                       
@@ -57,7 +57,7 @@
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>
-                                <span href="#">Summary</span>  
+                                <span href="#">Our Joureny</span>  
                             </li>                            
                         </ul>
                         <!-- END PAGE BREADCRUMBS -->
@@ -70,7 +70,7 @@
                                         <div class="portlet-title">
                                             <div class="caption">
                                                 <i class="icon-social-dribbble font-green"></i>
-                                                <span class="caption-subject font-green bold uppercase">About Us Sumary Content</span>
+                                                <span class="caption-subject font-green bold uppercase">Our Journey Content</span>
                                             </div>                                         
                                         </div>
                                         <div class="portlet-body form">
@@ -79,14 +79,9 @@
                                                 <div class="form-body">
                                                     <div class="form-group">                                                        
                                                         <div class="col-md-12">
-                                                            <textarea type="text" class='form-control' rows='5' id='First'><?php echo $First;?></textarea>
+                                                            <textarea type="text" class='form-control' rows='25' id='Journey'><?php echo $Journey;?></textarea>
                                                         </div>
-                                                    </div>
-                                                    <div class="form-group">                                                        
-                                                        <div class="col-md-12">
-                                                            <textarea type="text" class='form-control' rows='5' id='Second'><?php echo $Second;?></textarea>                                                         
-                                                        </div>
-                                                    </div>                                                                                               
+                                                    </div>                                                                                                                                                
                                                 </div>
                                                 <div class="form-actions">
                                                     <div class="row">
