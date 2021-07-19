@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="process-content last-paragraph-no-margin">
                                     <span class="alt-font d-block font-weight-500 text-white margin-10px-bottom">Fresh Ingredients</span>
-                                    <p class="text-white opacity-7">We use top quality Peaches from Fredericksburg and fresh Pineapples from Maui Gold to produce our Jelly creations</p>
+                                    <p class="text-white opacity-7">We use top quality Peaches from Fredericksburg and fresh Maui Gold Pineapples from Maui Gold to produce our Jelly creations</p>
                                 </div>                        
                             </div>
                         </div>
