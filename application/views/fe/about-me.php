@@ -115,7 +115,7 @@
                             <div class="col-12 col-md-12 z-index-0">
                                 <span class="text-overlap text-uppercase title-extra-large-heavy alt-font text-center d-none d-md-block font-weight-700 opacity-1 z-index-minus-1">our story</span>
                                 <div class="tilt-box" data-tilt-options='{ "maxTilt": 20, "perspective": 1000, "easing": "cubic-bezier(.03,.98,.52,.99)", "scale": 1, "speed": 500, "transition": true, "reset": true, "glare": false, "maxGlare": 1 }'>
-                                    <img src="<?php echo base_url('assets/images/about-main.png');?>" class="position-relative z-index-6 border-radius-6px" alt="">
+                                    <img src="<?php echo base_url('assets/images/about-main.jpg');?>" class="position-relative z-index-6 border-radius-6px" alt="">
                                 </div>
                             </div>
                         </div>
@@ -134,7 +134,7 @@
                                 </div>
                                 <div class="process-content last-paragraph-no-margin">
                                     <span class="alt-font d-block font-weight-500 text-white margin-10px-bottom">Fresh Ingredients</span>
-                                    <p class="text-white opacity-7">We use Top quality Ingredients from Fredericksburg and fresh produce like Maui Gold to produce our Jelly creations</p>
+                                    <p class="text-white opacity-7">We use top quality Peaches from Fredericksburg and fresh Pineapples from Maui Gold to produce our Jelly creations</p>
                                 </div>                        
                             </div>
                         </div>
