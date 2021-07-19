@@ -286,8 +286,6 @@ class ManageExplore extends CI_Controller {
 
 		$ret = $this->uploadImages($RecipeID);
 
-		echo $ret;
-
 		$this->db->select();
 		$this->db->where('RecipeID', $RecipeID);
 		$this->db->from('tblrecipe_images');
@@ -342,7 +340,7 @@ class ManageExplore extends CI_Controller {
             } 
              
             $errorUploadType = !empty($errorUploadType)?'<br/>File Type Error: '.trim($errorUploadType, ' | '):''; 
-			
+
             if(!empty($uploadData)){ 
                 // Insert files data into the database 
 				$insert = $this->db->insert_batch('tblrecipe_images', $uploadData); 
