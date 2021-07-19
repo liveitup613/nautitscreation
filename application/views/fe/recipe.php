@@ -163,7 +163,7 @@
                 <div class="container"> 
                     <div class="row align-items-center">
                         <div class="col-12 col-md-3 text-center text-md-left sm-margin-20px-bottom">
-                            <a href="<?php echo base_url();?>" class="footer-logo"><img src="<?php echo base_url('assets/images/logo.svg');?>" style="filter: invert(100%);"></a>
+                            <a href="<?php echo base_url();?>" class="footer-logo"><img src="<?php echo base_url('assets/images/logo.svg');?>"></a>
                         </div>
                         <div class="col-12 col-md-6 text-center last-paragraph-no-margin sm-margin-20px-bottom">
                             <p>Copyright&copy; Nauti T's Creation Ltd. | All rights reserved</p>

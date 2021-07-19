@@ -78,9 +78,9 @@
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-8 col-md-10 col-lg-8 full-screen flex-column d-flex justify-content-center text-center md-landscape-h-600px">
-                        <div class="border-color-golden-transparent border-all border-width-8px padding-3-half-rem-all lg-padding-4-half-rem-all xs-padding-2-rem-all">                            
+                        <div class="padding-3-half-rem-all lg-padding-4-half-rem-all xs-padding-2-rem-all">                            
                             <h1 class="title-medium alt-font font-weight-600 text-white text-uppercase letter-spacing-minus-4px margin-3-half-rem-bottom mx-auto sm-letter-spacing-minus-1px">Welcome to<br /><br /> Nauti T's Creations</h1>
-                            <span class="alt-font text-medium text-uppercase letter-spacing-3px text-white opacity-7 d-block">It's not just jelly, it's a creation</span>
+                            <span class="alt-font text-medium text-uppercase letter-spacing-3px text-black font-weight-500 opacity-7 d-block">It's not just jelly, it's a creation</span>
                         </div>
                     </div>
                     <div class="down-section text-center"><a href="#about" class="section-link up-down-ani"><i class="ti-mouse icon-small bounce text-white"></i></a></div>
@@ -99,7 +99,7 @@
                         <h5 class="alt-font font-weight-500 text-extra-dark-gray mb-0 letter-spacing-minus-1px">Now enjoy a creation by <span class="font-weight-700">Tisha Gavlik</span> on Nauti T's Creation</h5>
                     </div>
                     <div class="col-12 col-lg-5 col-md-7 col-sm-8 text-center text-sm-left padding-1-rem-left lg-padding-15px-left wow animate__fadeIn" data-wow-delay="0.5s">
-                        <p class="margin-20px-bottom">George Tillman, Jr. once said Food was a labor of love you felt by cooking it and eating it. This quote inspires me at every moment I spend porducing my creations that puts a smile on customer's face.</p>
+                        <p class="margin-20px-bottom">George Tillman, Jr. once said Food was a labor of love you felt by cooking it and eating it. This quote inspires me at every moment I spend producing my creations that puts a smile on customer's face.</p>
                         <a href="<?php echo base_url('about-me');?>" class="btn btn-link btn-extra-large text-extra-dark-gray">My Story</a>
                     </div>
                 </div>
@@ -115,9 +115,9 @@
                             <div class="col-12 col-md-6 cover-background sm-h-700px" style="background-image: url('<?php echo base_url('assets/images/about-me-2.png');?>')"></div>
                             <div class="col-12 col-md-6 bg-light-cream d-flex flex-column justify-content-center text-left padding-3-rem-lr xl-padding-15px-lr lg-padding-5-rem-all md-padding-2-half-rem-lr">
                                 <img src="<?php echo base_url('assets/images/home-restaurant-img-05.png');?>" class="align-self-start margin-20px-bottom" alt=""/>
-                                <h4 class="alt-font font-weight-300 text-extra-dark-gray letter-spacing-minus-1px w-85 margin-3-rem-bottom xs-w-100 xs-margin-15px-bottom">Masterchef <span class="font-weight-600">message</span></h4>
+                                <h4 class="alt-font font-weight-300 text-extra-dark-gray letter-spacing-minus-1px w-85 margin-3-rem-bottom xs-w-100 xs-margin-15px-bottom">Master Chef <span class="font-weight-600">message</span></h4>
                                 <span class="text-large text-extra-dark-gray line-height-30px d-block w-75 margin-20px-bottom xs-margin-30px-bottom xl-w-80 xs-w-100">"For me, cooking is an expression of the land where you are and the culture of that place"</span>
-                                <p class="w-75 xs-w-100">My inspiration are my Customers, that encourage me to create unique creations that always have you coming back for me</p>
+                                <p class="w-75 xs-w-100">My inspiration are my Customers, that encourage me to create unique creations that always have you coming back for more</p>
                                 <img src="<?php echo base_url('assets/images/hand_sign.png');?>" class="align-self-start margin-25px-top xs-margin-10px-top" alt=""/>
                             </div>
                         </div>
@@ -236,8 +236,7 @@
                             </figcaption>
                         </figure>
                         <div class="post-details text-center margin-40px-top sm-margin-20px-top">
-                            <span class="text-extra-dark-gray font-weight-500 alt-font d-block text-golden-hover text-uppercase">Strawberry</span>
-                            <span class="post-author text-medium-gray text-medium-gray text-uppercase d-inline-block align-middle text-small">Tomatoes <span class="text-very-small line-height-unset d-inline-block align-middle margin-10px-lr">&#9677;</span> Parmesan <span class="text-very-small line-height-unset d-inline-block align-middle margin-10px-lr">&#9677;</span> Basil</span>
+                            <span class="text-extra-dark-gray font-weight-500 alt-font d-block text-golden-hover text-uppercase">Strawberry</span>                            
                         </div>
                     </div>
                     <!-- end interactive banner item -->
@@ -253,8 +252,7 @@
                             </figcaption>
                         </figure>
                         <div class="post-details text-center margin-40px-top sm-margin-20px-top">
-                            <span class="text-extra-dark-gray font-weight-500 alt-font d-block text-golden-hover text-uppercase">Lemon Pucker Up</span>
-                            <span class="post-author text-medium-gray text-medium-gray text-uppercase d-inline-block align-middle text-small">Capsicum <span class="text-very-small line-height-unset d-inline-block align-middle margin-10px-lr">&#9677;</span> Paneer <span class="text-very-small line-height-unset d-inline-block align-middle margin-10px-lr">&#9677;</span> Cheese</span>
+                            <span class="text-extra-dark-gray font-weight-500 alt-font d-block text-golden-hover text-uppercase">Lemon Pucker Up</span>                            
                         </div>
                     </div>
                     <!-- end interactive banner item -->
@@ -270,8 +268,7 @@
                             </figcaption>
                         </figure>
                         <div class="post-details text-center margin-40px-top sm-margin-20px-top">
-                            <span class="text-extra-dark-gray font-weight-500 alt-font d-block text-golden-hover text-uppercase">Apple Butter</span>
-                            <span class="post-author text-medium-gray text-medium-gray text-uppercase d-inline-block align-middle text-small">Mushroom <span class="text-very-small line-height-unset d-inline-block align-middle margin-10px-lr">&#9677;</span> Cucumber <span class="text-very-small line-height-unset d-inline-block align-middle margin-10px-lr">&#9677;</span> Basil</span>
+                            <span class="text-extra-dark-gray font-weight-500 alt-font d-block text-golden-hover text-uppercase">Apple Butter</span>                            
                         </div>
                     </div>
                     <!-- end interactive banner item -->
