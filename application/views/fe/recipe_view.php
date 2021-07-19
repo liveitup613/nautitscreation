@@ -22,11 +22,11 @@
         <!-- start header -->
         <header>
             <!-- start navigation -->
-            <nav class="navbar navbar-expand-lg navbar-white bg-transparent header-light fixed-top header-reverse-scroll">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top header-reverse-scroll">
                 <div class="container-lg nav-header-container">
                     <div class="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0">
                         <a class="navbar-brand" href="<?php echo base_url();?>">
-                            <img src="<?php echo base_url('assets/images/logo.svg');?>" class="default-logo" alt="" style='filter: invert(0%);'>
+                            <img src="<?php echo base_url('assets/images/logo.svg');?>" class="default-logo" alt="">
                             <img src="<?php echo base_url('assets/images/logo.svg');?>" class="alt-logo" alt="">
                             <img src="<?php echo base_url('assets/images/logo.svg');?>" class="mobile-logo" alt="">
                         </a>
@@ -75,14 +75,13 @@
         </header>
         <!-- end header -->
          <!-- start banner section -->
-         <section class="big-section cover-background overlap-height padding-70px-bottom" style="background-image: url('<?php echo base_url('assets/images/blog-post-layout-03-img-01.jpg');?>');">
+         <section class="big-section cover-background overlap-height padding-70px-bottom" style="background-image: linear-gradient(to bottom, #6504E9, #fff);">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-6 col-lg-7 col-sm-8 overlap-gap-section text-center">
-                        <div class="d-inline-block text-center text-uppercase margin-25px-bottom text-yellow-ochre-light">
-                            <a href="blog-grid.html" class="alt-font d-inline-block align-middle text-yellow-ochre-light text-extra-dark-gray-hover">Recipe</a><span class="text-extra-large d-inline-block align-middle">&nbsp;&nbsp;&#8226;&nbsp;&nbsp;</span><a href="blog-grid.html" class="alt-font d-inline-block align-middle text-yellow-ochre-light text-extra-dark-gray-hover"><?php echo date('j F, Y', $Recipe['DateAdded']);?></a>
+                        <div class="d-inline-block text-center text-uppercase margin-25px-bottom text-yellow-ochre-light">                            
                         </div>
-                        <h4 class="alt-font text-extra-dark-gray font-weight-500 letter-spacing-minus-1px margin-35px-bottom"><?php echo $Recipe['Title'];?></h4>
+                        <h4 class="alt-font text-white font-weight-500 letter-spacing-minus-1px margin-35px-bottom"><?php echo $Recipe['Title'];?></h4>
                     </div>
                 </div>
             </div>
@@ -115,7 +114,7 @@
         </section>
         <!-- end slider section -->
         <!-- start section -->
-        <section>
+        <section style='padding: 10px;'>
             <div class="container">
                 <div class="row justify-content-center">                    
                 </div>
