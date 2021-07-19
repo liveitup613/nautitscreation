@@ -93,7 +93,10 @@
                 <div class="swiper-wrapper">
                     
                     <?php
+                        $cnt = 0;
                         foreach ($Recipe['images'] as $row) {
+                            $cnt++;
+                            if ($cnt == 1) continue;
                             ?>
                     <!-- start slider item -->
                     <div class="swiper-slide w-55 sm-w-100" style='padding: 0px 10px;'>
