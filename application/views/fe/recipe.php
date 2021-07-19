@@ -75,7 +75,7 @@
         </header>
         <!-- end header -->
         <!-- start page title -->
-        <section class="half-section bg-light-gray parallax" data-parallax-background-ratio="0.5" style="background-image:url('<?php echo base_url('assets/images/portfolio-bg2.jpg');?>');">
+        <section class="half-section bg-light-gray parallax" data-parallax-background-ratio="0.5" style="background-image:url('<?php echo base_url('assets/images/recipe_home_background.png');?>');">
             <div class="container">
                 <div class="row align-items-stretch justify-content-center extra-small-screen">
                     <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">                        
@@ -83,11 +83,8 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end page title -->
-        <!-- start section --> 
-        <section class="bg-light-gray padding-nine-lr pt-0 xl-no-padding-lr">
-            <div class="container-fluid">
+
+            <div class="container-fluid margin-80px-top">
                 <div class="row">
                     <div class="col-12 blog-content xs-no-padding-lr">
                         <ul class="blog-modern blog-wrapper grid grid-loading grid-4col xl-grid-4col lg-grid-3col md-grid-2col sm-grid-2col xs-grid-1col gutter-double-extra-large">
@@ -117,7 +114,7 @@
                 </div>
             </div>
         </section>
-        <!-- end section -->  
+        <!-- end page title -->
         <!-- start footer -->
         <footer class="footer-dark bg-slate-blue">
             <div class="footer-top padding-five-tb lg-padding-eight-tb md-padding-50px-tb">
