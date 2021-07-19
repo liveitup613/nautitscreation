@@ -25,7 +25,7 @@
             <nav class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top border-color-black-transparent header-reverse-scroll">
                 <div class="container-lg nav-header-container">
                     <div class="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0">
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="<?php echo base_url();?>">
                             <img src="<?php echo base_url('assets/images/logo.svg');?>" class="default-logo" alt="">
                             <img src="<?php echo base_url('assets/images/logo.svg');?>" class="alt-logo" alt="">
                             <img src="<?php echo base_url('assets/images/logo.svg');?>" class="mobile-logo" alt="">
@@ -205,7 +205,7 @@
                 <div class="container"> 
                     <div class="row align-items-center">
                         <div class="col-12 col-md-3 text-center text-md-left sm-margin-20px-bottom">
-                            <a href="index.html" class="footer-logo"><img src="<?php echo base_url('assets/images/logo.svg');?>" alt="" style="filter: invert(100%);"></a>
+                            <a href="<?php echo base_url();?>" class="footer-logo"><img src="<?php echo base_url('assets/images/logo.svg');?>" alt="" style="filter: invert(100%);"></a>
                         </div>
                         <div class="col-12 col-md-6 text-center last-paragraph-no-margin sm-margin-20px-bottom">
                             <p>Copyright&copy; Nauti T's Creation Ltd. | All rights reserved</p>

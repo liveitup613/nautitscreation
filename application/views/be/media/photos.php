@@ -53,7 +53,7 @@
                         <!-- BEGIN PAGE BREADCRUMBS -->
                         <ul class="page-breadcrumb breadcrumb">
                             <li>
-                                <a href="index.html">Media</a>
+                                <a href="#">Media</a>
                                 <i class="fa fa-circle"></i>
                             </li>
                             <li>

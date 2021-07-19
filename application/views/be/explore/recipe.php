@@ -63,7 +63,7 @@
                     <!-- BEGIN PAGE BREADCRUMBS -->
                     <ul class="page-breadcrumb breadcrumb">
                         <li>
-                            <a href="index.html">Explore</a>
+                            <a href="#">Explore</a>
                             <i class="fa fa-circle"></i>
                         </li>
                         <li>
