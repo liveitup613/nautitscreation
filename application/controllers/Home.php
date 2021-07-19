@@ -35,7 +35,7 @@ class Home extends CI_Controller {
 		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
 		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
 		$data['Social'] = $this->Value_model->getRowsByType('Social');
-
+		
 		$this->load->view('fe/home', $data);
     }
     
@@ -51,6 +51,13 @@ class Home extends CI_Controller {
 		$this->db->from('tblresources');
 		$this->db->where('Type', 'Ingredient Resource');
 		$data['Resources'] = $this->db->get()->result_array();
+		
+		$this->db->select('*');
+		$this->db->from('tblvalues');
+		$this->db->where('Type', 'Our Journey');
+		$ret = $this->db->get()->row_array();
+
+		$data['Journey'] = $ret['Value'];
 
         $this->load->view('fe/about-me', $data); 
 	}
