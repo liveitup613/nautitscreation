@@ -122,7 +122,7 @@
         <!-- end section -->        
         <!-- start section -->
         <section class="big-section wow animate__fadeIn parallax" style="background-image: url('<?php echo base_url('assets/images/contact-form.jpg');?>');">
-            <div class="opacity-extra-medium-2 bg-light-cream" style="opacity: 0.8;"></div>
+            <div class="opacity-extra-medium-2 bg-light-cream" style="opacity: 0.3;"></div>
             <div class="container">
                 <div class="row align-items-end justify-content-center">
                     <div class="col-12 offset-lg-2 col-lg-6 col-md-8 md-margin-50px-bottom">   
