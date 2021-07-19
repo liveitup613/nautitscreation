@@ -99,8 +99,7 @@
                                     <div class="blog-post-image bg-gradient-fast-blue-purple" style="background-image: url('<?php echo base_url('assets/images/recipes/'.$row['Attach']);?>'); min-height: 250px; background-size: cover;">
                                     </div>                                    
                                     <div class="post-details bg-white text-center padding-3-rem-all xl-padding-2-rem-all">                                        
-                                        <p class="alt-font text-extra-dark-gray text-extra-dark-gray-hover text-large line-height-26px d-block margin-20px-bottom"><?php echo $row['Title'];?></p>
-                                        <p class="alt-font text-uppercase text-extra-small letter-spacing-1px d-block"><?php echo date('F j, Y', $row['DateAdded']);?></p>
+                                        <p class="alt-font text-extra-dark-gray text-extra-dark-gray-hover text-large line-height-26px d-block margin-20px-bottom"><?php echo $row['Title'];?></p>                                        
                                     </div>
                                     </a>
                                 </div>
