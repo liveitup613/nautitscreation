@@ -63,7 +63,7 @@
                                     <a href="<?php echo base_url('faq');?>" class="nav-link text-uppercase">FAQ</a>
                                 </li>
                                 <li class="nav-item dropdown megamenu">
-                                    <a href="<?php echo base_url('contact-us');?>" class="nav-link text-uppercase">Contat Us</a>
+                                    <a href="<?php echo base_url('contact-us');?>" class="nav-link text-uppercase">Contact Us</a>
                                 </li>
                             </ul>
                         </div>

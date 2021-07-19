@@ -64,7 +64,7 @@
                                     <a href="<?php echo base_url('faq');?>" class="nav-link text-uppercase">FAQ</a>
                                 </li>
                                 <li class="nav-item dropdown megamenu active">
-                                    <a href="<?php echo base_url('contact-us');?>" class="nav-link text-uppercase">Contat Us</a>
+                                    <a href="<?php echo base_url('contact-us');?>" class="nav-link text-uppercase">Contact Us</a>
                                 </li>
                             </ul>
                         </div>
@@ -78,10 +78,7 @@
             <div class="container">
                 <div class="d-flex flex-column flex-md-row justify-content-center extra-small-screen align-items-end"> 
                     <div class="w-100 w-md-50 page-title-extra-small">                        
-                    </div>                   
-                    <div class="w-100 w-md-50">
-                        <h4 class="alt-font font-weight-500 text-white mb-0 title-small">While we're good with smoke signals, there are simpler ways for us to get in touch and answer your questions.</h4>
-                    </div>
+                    </div>                                       
                 </div>
             </div>
         </section>
@@ -103,7 +100,7 @@
                             </div>
                             <div class="col-12 col-sm-6">
                                 <span class="alt-font d-block text-extra-dark-gray font-weight-500 margin-10px-bottom text-extra-large">Hours</span>
-                                <ul class="text-black">
+                                <ul class="text-black margin-20px-left">
                                     <?php
                                         foreach ($Hour as $hour) {
                                             echo '<li><span class="font-weight-600">'. $hour['Name'] . '</span>. '. $hour['Value'] .'</li>';
@@ -122,10 +119,8 @@
             <div class="opacity-extra-medium-2 bg-light-cream" style="opacity: 0.8;"></div>
             <div class="container">
                 <div class="row align-items-end justify-content-center">
-                    <div class="col-12 col-lg-5 col-md-8 md-margin-50px-bottom">                        
-                    </div>
-                    <div class="col-12 col-lg-6 offset-lg-1 col-md-8">
-                        <h4 class="alt-font text-black font-weight-600">Let's get in touch with us</h4>
+                    <div class="col-12 offset-lg-2 col-lg-6 col-md-8 md-margin-50px-bottom">   
+                        <h4 class="alt-font text-black font-weight-600">Stay in the Jam</h4>
                         <form action="email-templates/contact-form.php" method="post" class="alt-font text-extra-dark-gray">
                             <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="text" name="name" placeholder="Your name" />
                             <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="email" name="email" placeholder="Your email address" />
@@ -134,7 +129,9 @@
                             <input type="hidden" name="redirect" value="">
                             <button class="btn btn-medium btn-dark-gray mb-0 submit" type="submit">send message</button>
                             <div class="form-results d-none"></div>
-                        </form>
+                        </form>                     
+                    </div>
+                    <div class="col-12 col-lg-4 col-md-4">
                     </div>
                 </div>
             </div>
