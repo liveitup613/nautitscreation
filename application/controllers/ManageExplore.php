@@ -309,12 +309,9 @@ class ManageExplore extends CI_Controller {
 		
 	}
 
-	private function uploadImages($RecipeID) {
-		return count(array_filter($_FILES['resource']['name']));
+	private function uploadImages($RecipeID) {		
         if(!empty($_FILES['resource']['name']) && count(array_filter($_FILES['resource']['name'])) > 0){ 
             $filesCount = count($_FILES['resource']['name']); 
-
-			return $filesCount;
             for($i = 0; $i < $filesCount; $i++){ 
                 $_FILES['file']['name']     = $_FILES['resource']['name'][$i]; 
                 $_FILES['file']['type']     = $_FILES['resource']['type'][$i]; 
@@ -345,10 +342,7 @@ class ManageExplore extends CI_Controller {
             } 
              
             $errorUploadType = !empty($errorUploadType)?'<br/>File Type Error: '.trim($errorUploadType, ' | '):''; 
-
-			return $uploadData;
-			echo $errorUploadType;
-
+			
             if(!empty($uploadData)){ 
                 // Insert files data into the database 
 				$insert = $this->db->insert_batch('tblrecipe_images', $uploadData); 
