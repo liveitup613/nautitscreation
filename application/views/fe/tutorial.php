@@ -1,17 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="en">
     <head>
-        <title>Litho – The Multipurpose HTML5 Template</title>
+        <title>Nauti T's Creation | Turtorial</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="author" content="ThemeZaa">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
         <meta name="description" content="It's NOT just jelly, it's a CREATION">
         <!-- favicon icon -->
-        <link rel="shortcut icon" href="images/favicon.svg">
-        <link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        <link rel="shortcut icon" href="<?php echo base_url('favicon.svg');?>" />
         <!-- style sheets and font icons  -->
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/font-icons.min.css');?>">
         <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/theme-vendors.min.css');?>">

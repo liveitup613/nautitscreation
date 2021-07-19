@@ -35,6 +35,11 @@ class ManageFaq extends CI_Controller {
 		$this->load->model('Value_model');
 
 		$data['FAQs'] = $this->Value_model->getRowsByType('FAQ');
+
+		$this->load->model('Value_model');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
+		
 		$this->load->view('be/faq/index', $data);
 	}	
 }

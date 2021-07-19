@@ -36,6 +36,11 @@ class ManageHome extends CI_Controller {
 		$this->db->from('tblguestbook');
 		$data['guestbooks'] = $this->db->get()->result_array();
 
+		$this->load->model('Value_model');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
+		
+
 		$this->load->view('be/home/guestbook', $data);
 	}	
 	

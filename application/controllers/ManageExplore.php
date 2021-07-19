@@ -52,6 +52,10 @@ class ManageExplore extends CI_Controller {
 
 		$data['resources'] = $return_result;
 
+		$this->load->model('Value_model');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
+
 		$this->load->view('be/explore/recipe', $data);
 	}
 
@@ -64,6 +68,10 @@ class ManageExplore extends CI_Controller {
 		$this->db->where('Type', 'Tutorial');
 		$this->db->from('tblresources');
 		$data['resources'] = $this->db->get()->result_array();
+
+		$this->load->model('Value_model');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
 
 		$this->load->view('be/explore/tutorial', $data);
 	}

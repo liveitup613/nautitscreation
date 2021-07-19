@@ -3,34 +3,27 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12 footer-block">
-                <h2>RADIOLOGICAL & D&D SERVICES</h2>
-                <p> Ken Gavlik <br>
-                    VP Radiological Services<br>  <br>  
-                    kegavlik@philotechnics.com<br>
-                    Phone: 865-816-8495<br>
-                </p>
-            </div>                    
-            <div class="col-md-4 col-sm-6 col-xs-12 footer-block">
-                <h2>GENERAL INQUIRIES</h2>
-                <address class="margin-bottom-40"> 
-                    Corporate Office:<br>
-                    201 Renovare Blvd<br>
-                    Oak Ridge, TN 37830<br><br>
-                    Phone: 865-483-1551<br>
-                    Main Fax: 865-220-0686<br><br>
-                    San Diego Office:<br>
-                    7945 Dunbrook Road, Suite H, San Diego, CA 92126<br><br>
-                    Phone: 858-586-2580<br>
-                    Fax: 858-586-2597M<br>                     
-                </address>
+                <img style='width: 120px; filter: grayscale(0.8);' src="<?php echo base_url('assets/images/logo.svg');?>">
             </div>
             <div class="col-md-4 col-sm-6 col-xs-12 footer-block">
-                <h2>WASTE MANAGEMENT & BROKERAGE SERVICES</h2>
-                <address class="margin-bottom-40"> 
-                    Meghan Turvey VP Waste Management<br><br>
-                    mgturvey@philotechnics.com<br>
-                    Phone: 865-285-3064<br>
-                </address>
+                <h2>Get in Touch</h2>
+                <p> <?php echo $Contact[0]['Value'];?><br><br> 
+                    Phone: <?php echo $Contact[1]['Value'];?><br><br>
+                    <?php
+                    $emails = explode(",", $Contact[2]['Value']);
+                    foreach($emails as $email) 
+                        echo trim($email) . '<br>';
+                    ?>
+                </p>
+            </div>                    
+            
+            <div class="col-md-4 col-sm-6 col-xs-12 footer-block">
+                <h2>Working Hours</h2>
+                <?php
+                    foreach ($Hour as $hour) {
+                        echo '<p>'. $hour['Name'] . '. '. $hour['Value'] .'<br><br></p>';
+                    }
+                ?>
             </div>                    
         </div>
     </div>
@@ -38,7 +31,7 @@
 <!-- END PRE-FOOTER -->
 <!-- BEGIN INNER FOOTER -->
 <div class="page-footer">
-    <div class="container"> Copyright© 2020 . All rights Reserved. Made with ♥ in Baltimore                
+    <div class="container"> Copyright© 2021 . All rights Reserved. Made with ♥ Nauti T's Creation             
     </div>
 </div>
 <div class="scroll-to-top">

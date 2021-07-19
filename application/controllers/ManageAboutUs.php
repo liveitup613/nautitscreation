@@ -36,6 +36,10 @@ class ManageAboutUs extends CI_Controller {
 		$this->db->from('tblresources');
 		$data['resources'] = $this->db->get()->result_array();
 
+		$this->load->model('Value_model');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
+
 		$this->load->view('be/aboutus/ingredients-resources', $data);
 	}
 
@@ -47,6 +51,9 @@ class ManageAboutUs extends CI_Controller {
 		$this->load->model('Value_model');
 
 		$data['LocalStores'] = $this->Value_model->getRowsByType('Local Store');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
+
 		$this->load->view('be/aboutus/local-store', $data);
 	}
 
@@ -63,6 +70,10 @@ class ManageAboutUs extends CI_Controller {
     		$text = str_ireplace($breaks, "", $ret['Value']);  
 			$data['Journey'] = $text;
 		}
+		
+		$this->load->model('Value_model');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
 
 		$this->load->view('be/aboutus/our-journey', $data);
 	}

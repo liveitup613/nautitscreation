@@ -40,6 +40,10 @@ class ManageMedia extends CI_Controller {
 		$this->db->from('tblresources');
 		$data['resources'] = $this->db->get()->result_array();
 
+		$this->load->model('Value_model');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
+
 		$this->load->view('be/media/photos', $data);
 	}
 
@@ -52,6 +56,10 @@ class ManageMedia extends CI_Controller {
 		$this->db->where('Type', 'Video');
 		$this->db->from('tblresources');
 		$data['resources'] = $this->db->get()->result_array();
+
+		$this->load->model('Value_model');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
 
 		$this->load->view('be/media/videos', $data);
 	}

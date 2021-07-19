@@ -30,6 +30,10 @@ class ManageContactUs extends CI_Controller {
 		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
 		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
 
+		$this->load->model('Value_model');
+		$data['Contact'] = $this->Value_model->getRowsByType('Contact');
+		$data['Hour'] = $this->Value_model->getRowsByType('Hour');
+
         $this->load->view('be/contact-us/index', $data);
     }
 
