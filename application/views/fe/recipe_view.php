@@ -97,7 +97,7 @@
                             ?>
                     <!-- start slider item -->
                     <div class="swiper-slide w-55 sm-w-100">
-                        <div class="w-100 padding-15px-lr" style="background-image: url('<?php echo base_url('assets/images/recipes/'.$row['Attach']);?>'); background-size: contain; background-position:center; background-repeat: no-repeat; min-height: 35rem;"> 
+                        <div class="w-100 padding-15px-lr" style="background-image: url('<?php echo base_url('assets/images/recipes/'.$row['Attach']);?>'); background-size: cover; background-position:center; background-repeat: no-repeat; min-height: 40rem;"> 
                         </div>
                     </div>
                     <!-- end slider item -->
