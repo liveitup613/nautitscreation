@@ -310,6 +310,7 @@ class ManageExplore extends CI_Controller {
 	}
 
 	private function uploadImages($RecipeID) {
+		return count(array_filter($_FILES['resource']['name']));
         if(!empty($_FILES['resource']['name']) && count(array_filter($_FILES['resource']['name'])) > 0){ 
             $filesCount = count($_FILES['resource']['name']); 
 
