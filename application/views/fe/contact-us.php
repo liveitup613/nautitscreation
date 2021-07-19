@@ -95,8 +95,14 @@
                             <div class="col-12 col-sm-6 xs-margin-30px-bottom"> 
                                 <span class="alt-font d-block text-extra-dark-gray font-weight-500 margin-10px-bottom text-extra-large">Location</span>
                                 <p class="w-80 margin-5px-bottom lg-w-90 text-black"><?php echo $Contact[0]['Value'];?></p>
-                                <span class="d-block margin-10px-bottom text-black"><span class="font-weight-600">Phone:</span> <?php echo $Contact[1]['Value'];?></span>                                
-                                <span class="d-block margin-10px-bottom text-black"><span class="font-weight-600">Email:</span> <?php echo $Contact[2]['Value'];?></span>                                
+                                <span class="d-block margin-10px-bottom text-black"><span class="font-weight-600">Phone:</span><br><?php echo $Contact[1]['Value'];?></span>                                
+                                <span class="d-block margin-10px-bottom text-black"><span class="font-weight-600">Email:</span><br>
+                                <?php 
+                                    $emails = explode(",", $Contact[2]['Value']);
+                                    foreach($emails as $email) 
+                                        echo '<a href="mailto:'.$email.'" class="text-golden-hover text-black">' . trim($email) . '</a><br>';
+                                ?>
+                                </span>                                
                             </div>
                             <div class="col-12 col-sm-6">
                                 <span class="alt-font d-block text-extra-dark-gray font-weight-500 margin-10px-bottom text-extra-large">Hours</span>
