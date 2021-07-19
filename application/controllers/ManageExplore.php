@@ -341,12 +341,15 @@ class ManageExplore extends CI_Controller {
              
             $errorUploadType = !empty($errorUploadType)?'<br/>File Type Error: '.trim($errorUploadType, ' | '):''; 
 
+			echo $uploadData;
+			echo $errorUploadType;
+
             if(!empty($uploadData)){ 
                 // Insert files data into the database 
 				$insert = $this->db->insert_batch('tblrecipe_images', $uploadData); 
-                return $insert? 'success' : 'failed'; 
-                
-            }else{                 
+                return $insert? 'success' : 'failed';                 
+            }
+			else{                 
                 return "Sorry, there was an error uploading your file.".$errorUploadType;
             } 
         }
