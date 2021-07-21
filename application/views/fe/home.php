@@ -512,10 +512,10 @@
 
         var tl = new TimelineMax({
             repeat: -1, //-1 loop
-            repeatDelay: 0.25,
+            repeatDelay: 2.0,
             yoyo: true
         });
-        tl.fromTo(textAnimation, 4, //4
+        tl.fromTo(textAnimation, 3, //4
             {
                 animationProgress: 1.0
             }, {
@@ -527,10 +527,10 @@
 
         var t2 = new TimelineMax({
             repeat: -1, //-1 loop
-            repeatDelay: 0.25,
+            repeatDelay: 2.0,
             yoyo: true
         });
-        t2.fromTo(textAnimation1, 4, //4
+        t2.fromTo(textAnimation1, 3, //4
             {
                 animationProgress: 1.0
             }, {
