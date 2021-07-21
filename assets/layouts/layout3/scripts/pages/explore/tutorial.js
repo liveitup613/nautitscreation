@@ -31,6 +31,8 @@ $('#btnAddNew').click(function() {
         return;
     }
 
+    showSpinner('#addVideoModalContent');
+
     $.ajax({
 		url: base_url + "api/tutorial/add",
 		method: "POST",
@@ -40,6 +42,7 @@ $('#btnAddNew').click(function() {
 		processData: false,
 		dataType: "json",
 		success: function (res) {
+            hideSpinner('#addVideoModalContent');
 			if (res.success == true) {
                 showSuccessToastr('Add New Tutorial');
 				document.location.reload();
@@ -75,3 +78,15 @@ $('#btnDelete').click(function() {
         }
     })
 });
+
+function showSpinner(target) {
+    App.blockUI({
+        target: target,
+        animate: true
+    });
+}
+
+function hideSpinner(target) {
+    App.unblockUI(target);
+}
+
