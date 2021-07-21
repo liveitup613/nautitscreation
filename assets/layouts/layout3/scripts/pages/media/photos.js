@@ -11,6 +11,8 @@ $('#btnAddNew').click(function() {
         return;
     }
 
+    showSpinner('#addPhotoModalContent');
+
     $.ajax({
 		url: base_url + "api/resource/add",
 		method: "POST",
@@ -20,6 +22,7 @@ $('#btnAddNew').click(function() {
 		processData: false,
 		dataType: "json",
 		success: function (res) {
+            hideSpinner('#addPhotoModalContent');
 			if (res.success == true) {
                 showSuccessToastr('Add New Photo');
 				document.location.reload();
@@ -29,6 +32,7 @@ $('#btnAddNew').click(function() {
             }
         },
         error: function (err) {
+            hideSpinner('#addPhotoModalContent');
             showErrorToastr('Add New Photo');
         }
 	});
@@ -59,6 +63,7 @@ $('#btnDelete').click(function() {
 function editService(ID) {    
     $('#ID_Edit').val(ID);
 
+    showSpinner('body');
     $.ajax({
         url: base_url + 'api/resource/get',
         type: 'post', 
@@ -66,6 +71,7 @@ function editService(ID) {
             ID : ID
         },
         success: function(res) {
+            hideSpinner('body');
             var data = JSON.parse(res);
             data = data.data;
             if (data.success == false) {
@@ -102,6 +108,7 @@ function readURL(input, avatar) {
 }
 
 $('#btnUpdate').click(function() {
+    showSpinner('#editPhotoModalContent');
     $.ajax({
         url: base_url + 'api/resource/update',
         method: "POST",
@@ -111,13 +118,27 @@ $('#btnUpdate').click(function() {
 		processData: false,
 		dataType: "json",
         success: function(res){
+            hideSpinner('#editPhotoModalContent');
             if (res.success == true)               
                 document.location.reload();
             else   
                 showErrorToastr(res.message);
         },
         error: function(err) {
+            hideSpinner('#editPhotoModalContent');
             showErrorToastr('Update Photo');
         }
     })
 })
+
+function showSpinner(target) {
+    App.blockUI({
+        target: target,
+        animate: true
+    });
+}
+
+function hideSpinner(target) {
+    App.unblockUI(target);
+}
+

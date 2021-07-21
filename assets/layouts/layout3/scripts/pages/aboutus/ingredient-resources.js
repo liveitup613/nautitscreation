@@ -10,6 +10,8 @@ $('#btnAddNew').click(function() {
     if (!$('#newPortfolioForm').valid()) {
         return;
     }
+    
+    showSpinner('#addModalContent');
 
     $.ajax({
 		url: base_url + "api/resource/add",
@@ -20,6 +22,7 @@ $('#btnAddNew').click(function() {
 		processData: false,
 		dataType: "json",
 		success: function (res) {
+            hideSpinner('#addModalContent');
 			if (res.success == true) {
                 showSuccessToastr('Add New Portfolio');
 				document.location.reload();
@@ -29,6 +32,7 @@ $('#btnAddNew').click(function() {
             }
         },
         error: function (err) {
+            hideSpinner('#addModalContent');
             showErrorToastr('Add New Portfolio');
         }
 	});
@@ -59,6 +63,8 @@ $('#btnDelete').click(function() {
 function editService(ID) {    
     $('#ID_Edit').val(ID);
 
+    showSpinner('body');
+
     $.ajax({
         url: base_url + 'api/resource/get',
         type: 'post', 
@@ -66,6 +72,7 @@ function editService(ID) {
             ID : ID
         },
         success: function(res) {
+            hideSpinner('body');
             var data = JSON.parse(res);
             data = data.data;
             if (data.success == false) {
@@ -103,6 +110,7 @@ function readURL(input, avatar) {
 }
 
 $('#btnUpdate').click(function() {
+    showSpinner('#editModalContent');
     $.ajax({
         url: base_url + 'api/resource/update',
         method: "POST",
@@ -112,13 +120,27 @@ $('#btnUpdate').click(function() {
 		processData: false,
 		dataType: "json",
         success: function(res){
+            hideSpinner('#editModalContent');
             if (res.success == true)               
                 document.location.reload();
             else   
                 showErrorToastr(res.message);
         },
         error: function(err) {
+            hideSpinner('#editModalContent');
             showErrorToastr('Update Portfolio');
         }
     })
 })
+
+function showSpinner(target) {
+    App.blockUI({
+        target: target,
+        animate: true
+    });
+}
+
+function hideSpinner(target) {
+    App.unblockUI(target);
+}
+

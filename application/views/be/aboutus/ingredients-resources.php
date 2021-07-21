@@ -127,7 +127,7 @@
                 <!-- BEGIN ADD MODAL CONTENT BODY -->
                 <div class="modal fade" id="AddNewModal" tabindex="-1" role="basic" aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content">
+                        <div class="modal-content" id='addModalContent'>
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
                                 <h4 class="modal-title">Add New</h4>
@@ -165,7 +165,7 @@
                 <!-- BEGIN EDIT MODAL CONTENT BODY -->
                 <div class="modal fade" id="editModal" tabindex="-1" role="basic" aria-hidden="true">
                     <div class="modal-dialog">
-                        <div class="modal-content">
+                        <div class="modal-content" id='editModalContent'>
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
                                 <h4 class="modal-title">Edit</h4>

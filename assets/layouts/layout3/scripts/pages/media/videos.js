@@ -32,6 +32,8 @@ $('#btnAddNew').click(function() {
         return;
     }
 
+    showSpinner('#addVideoModalContent');
+
     $.ajax({
 		url: base_url + "api/video/add",
 		method: "POST",
@@ -41,6 +43,7 @@ $('#btnAddNew').click(function() {
 		processData: false,
 		dataType: "json",
 		success: function (res) {
+            hideSpinner('#addVideoModalContent');
 			if (res.success == true) {
                 showSuccessToastr('Add New Video');
 				document.location.reload();
@@ -50,6 +53,7 @@ $('#btnAddNew').click(function() {
             }
         },
         error: function (err) {
+            hideSpinner('#addVideoModalContent');
             showErrorToastr('Add New Video');
         }
 	});
@@ -141,4 +145,16 @@ $('#btnUpdate').click(function() {
             showErrorToastr('Update Photo');
         }
     })
-})
+});
+
+function showSpinner(target) {
+    App.blockUI({
+        target: target,
+        animate: true
+    });
+}
+
+function hideSpinner(target) {
+    App.unblockUI(target);
+}
+
