@@ -52,6 +52,7 @@ $('#btnAddNew').click(function() {
             }
         },
         error: function (err) {
+            hideSpinner('#addVideoModalContent');
             showErrorToastr('Add New Tutorial');
         }
 	});
