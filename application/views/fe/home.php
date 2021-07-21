@@ -16,111 +16,16 @@
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css');?>" />
     <link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/responsive.css');?>" />
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
-
-    .jt {
-        position: relative;
-        font-size: 10vmin;
-        line-height: 10vmin;        
-        text-transform: uppercase;
-        font-display: swap;
-        text-shadow: 0 0 10px tomato;
-        font-weight: 600;
-    }
-
-    .jt__row {
-        display: block;
-    }
-
-    .jt__row:nth-child(1) {
-        clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
-    }
-
-    .jt__row:nth-child(2) {
-        clip-path: polygon(-10% 50%, 110% 50%, 110% 75.3%, -10% 75.3%);
-    }
-
-    .jt__row:nth-child(3) {
-        clip-path: polygon(-10% 25%, 110% 25%, 110% 50.3%, -10% 50.3%);
-    }
-
-    .jt__row:nth-child(4) {
-        clip-path: polygon(-10% 0%, 110% 0%, 110% 25.3%, -10% 25.3%);
-    }
-
-    .jt__row.jt__row--sibling {
+    #instructions {
         position: absolute;
-        top: 0;
-        left: 0;
-        user-select: none;
-        witdh: 800px;
+        color: #fff;
+        bottom: 0;
+        padding-bottom: 6px;
+        font-family: sans-serif;
+        width: 100%;
+        text-align: center;
+        pointer-events: none;
     }
-
-    .jt__text {
-        display: block;
-        transform-origin: bottom left;
-        animation: moveIn 2s 0s cubic-bezier(.36, 0, .06, 1) alternate infinite;
-    }
-
-    .jt__row:nth-child(1) .jt__text {
-        transform: translateY(-0.1em);
-    }
-
-    .jt__row:nth-child(2) .jt__text {
-        transform: translateY(-0.2em) scaleY(1.1);
-    }
-
-    .jt__row:nth-child(3) .jt__text {
-        transform: translateY(-0.3em) scaleY(1.2);
-    }
-
-    .jt__row:nth-child(4) .jt__text {
-        transform: translateY(-0.4em) scaleY(1.3);
-    }
-
-    .jt__row:nth-child(5) .jt__text {
-        transform: translateY(-0.9em) scaleY(1.4);
-    }
-
-    .jt__row:nth-child(6) .jt__text {
-        transform: translateY(-1.1em) scaleY(1.5);
-    }
-
-    @keyframes moveIn {
-
-        50%,
-        100% {
-            transform: translateY(0em)
-        }
-
-        0% {
-            opacity: 1;
-            filter: blur(5px);
-
-        }
-
-        100% {
-            opacity: 1;
-            filter: blur(0px);
-        }
-    }
-
-
-
-    .debug .jt__row:nth-child(even) {
-        color: black;
-        background: white;
-    }
-
-    .debug .jt__row:nth-child(odd) {
-        color: white;
-        background: black;
-    }
-
-    * {
-        box-sizing: border-box
-    }
-   
     </style>
 </head>
 
@@ -186,57 +91,12 @@
     <!-- end header -->
     <!-- start hero section -->
     <section class="parallax p-0" data-parallax-background-ratio="0.5"
-        style="background-image: url('<?php echo base_url('assets/images/background.png');?>');">
+        style="background-image: url('<?php echo base_url('assets/images/background.png');?>');">        
         <div class="opacity-extra-medium-2 bg-extra-dark-gray"></div>
-        <div class="container position-relative">
-            <div class="row justify-content-center">
-                <div
-                    class="col-12 col-xl-8 col-md-10 col-lg-8 full-screen flex-column d-flex justify-content-center text-center md-landscape-h-600px">
-                    <div class="padding-3-half-rem-all lg-padding-4-half-rem-all xs-padding-2-rem-all">
-                        <div style='display:flex; display: flex; align-items: center; justify-content: center; flex-direction: column; margin: 0; color: white; height: 100%;'>
-                            <h1 class="jt --debug">
-                                <span class="jt__row">
-                                    <span class="jt__text">Welcome to</span>
-                                </span>
-                                <span class="jt__row jt__row--sibling" aria-hidden="true">
-                                    <span class="jt__text">Welcome to</span>
-                                </span>
-                                <span class="jt__row jt__row--sibling" aria-hidden="true">
-                                    <span class="jt__text">Welcome to</span>
-                                </span>
-                                <span class="jt__row jt__row--sibling" aria-hidden="true">
-                                    <span class="jt__text">Welcome to</span>
-                                </span>
-                            </h1>
-
-                            <h1 class="jt --debug">
-                                <span class="jt__row">
-                                    <span class="jt__text">Nauti T's Creations</span>
-                                </span>
-                                <span class="jt__row jt__row--sibling" aria-hidden="true">
-                                    <span class="jt__text">Nauti T's Creations</span>
-                                </span>
-                                <span class="jt__row jt__row--sibling" aria-hidden="true">
-                                    <span class="jt__text">Nauti T's Creations</span>
-                                </span>
-                                <span class="jt__row jt__row--sibling" aria-hidden="true">
-                                    <span class="jt__text">Nauti T's Creations</span>
-                                </span>
-                            </h1>
-                        </div>
-                        <!-- <h1
-                            class="title-medium alt-font font-weight-600 text-white text-uppercase letter-spacing-minus-4px margin-3-half-rem-bottom mx-auto sm-letter-spacing-minus-1px">
-                            Welcome to<br /><br /> Nauti T's Creations</h1> -->
-                        <span
-                            class="txt-rotate alt-font text-large text-uppercase letter-spacing-3px text-white font-weight-600 opacity-7 d-block"
-                            data-period="2000" data-rotate="It's not just jelly, it's a creation" style='text-shadow: 0 0 10px tomato;'></span>
-                        <!-- <span class="alt-font text-medium text-uppercase letter-spacing-3px text-black font-weight-500 opacity-7 d-block">It's not just jelly, it's a creation</span> -->
-                    </div>
-                </div>
-                <div class="down-section text-center"><a href="#about" class="section-link up-down-ani"><i
+        <div id="three-container">
+            <div class="down-section text-center"><a href="#about" class="section-link up-down-ani"><i
                             class="ti-mouse icon-small bounce text-white"></i></a></div>
-            </div>
-        </div>
+        </div>        
     </section>
     <!-- end hero section -->
     <!-- start section -->
@@ -600,63 +460,465 @@
     <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/theme-vendors.min.js');?>"></script>
     <script type="text/javascript" src="<?php echo base_url('assets/js/main.js');?>"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/three.js/r75/three.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/bas.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/TextGeometry.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/FontUtils.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/pnltri.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/175711/droid_sans_bold.typeface.js'></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
 
     <script>
-    var TxtRotate = function(el, toRotate, period) {
-        this.toRotate = toRotate;
-        this.el = el;
-        this.period = parseInt(period, 10) || 2000;
-        this.txt = '';
-        this.tick();
-        this.isDeleting = false;
-    };
+    //capture the window loading
+    window.onload = init;
 
-    TxtRotate.prototype.tick = function() {
-        var fullTxt = this.toRotate;
+    function init() {
+        var root = new THREERoot({
+            createCameraControls: false,
+            antialias: true,            
+            fov: 60
+        });
 
-        if (this.isDeleting) {
-            this.txt = fullTxt.substring(0, this.txt.length - 1);
-        } else {
-            this.txt = fullTxt.substring(0, this.txt.length + 1);
-        }
+        //setup the scene
+        root.renderer.setClearColor( 0x000000, 0 ); 
+        root.renderer.setPixelRatio(window.devicePixelRatio || 1);
+        root.camera.position.set(0, 0, 400);
 
-        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
 
-        var that = this;
-        var delta = 100;
+        //create the text animation variable
 
-        if (this.isDeleting) {
-            delta /= 2;
-        }
+        var textAnimation = createTextAnimation("WELCOME TO");
+        textAnimation.position.y = 50;
+        root.scene.add(textAnimation);
 
-        if (!this.isDeleting && this.txt === fullTxt) {
-            delta = this.period;
-            this.isDeleting = true;
-        } else if (this.isDeleting && this.txt === '') {
-            this.isDeleting = false;
-            delta = 500;
-        }
+        var textAnimation1 = createTextAnimation("NAUTI T'S CREATIONS");
+        textAnimation1.position.y = -10;
+        root.scene.add(textAnimation1);
 
-        setTimeout(function() {
-            that.tick();
-        }, delta);
-    };
+        //set the timeline aspects of the animation
 
-    window.onload = function() {
-        console.log('windows start');
-        var elements = document.getElementsByClassName('txt-rotate');
-        for (var i = 0; i < elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-rotate');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-                new TxtRotate(elements[i], toRotate, period);
+        var tl = new TimelineMax({
+            repeat: -1, //-1 loop
+            repeatDelay: 0.25,
+            yoyo: true
+        });
+        tl.fromTo(textAnimation, 4, //4
+            {
+                animationProgress: 0.0
+            }, {
+                animationProgress: 1.0,
+                ease: Power1.easeInOut
+            },
+            0
+        );
+
+        var t2 = new TimelineMax({
+            repeat: -1, //-1 loop
+            repeatDelay: 0.25,
+            yoyo: true
+        });
+        t2.fromTo(textAnimation1, 4, //4
+            {
+                animationProgress: 0.0
+            }, {
+                animationProgress: 1.0,
+                ease: Power1.easeInOut
+            },
+            0
+        );
+
+        createTweenScrubber(tl);
+        createTweenScrubber(t2);
+    }
+
+    //create the text to be animated
+
+    function createTextAnimation(text) {
+        var geometry = generateTextGeometry(text, {
+            size: 14,
+            height: 0,
+            font: 'droid sans',
+            weight: 'bold',
+            style: 'normal',
+            anchor: {
+                x: 0.5,
+                y: 0.5,
+                z: 0.0
+            }
+        });
+
+        THREE.BAS.Utils.separateFaces(geometry);
+
+        return new TextAnimation(geometry);
+    }
+
+    //mathematical details of the animation
+
+    function generateTextGeometry(text, params) {
+        var geometry = new THREE.TextGeometry(text, params);
+
+        geometry.computeBoundingBox();
+
+        geometry.userData = {};
+        geometry.userData.size = {
+            width: geometry.boundingBox.max.x - geometry.boundingBox.min.x,
+            height: geometry.boundingBox.max.y - geometry.boundingBox.min.y,
+            depth: geometry.boundingBox.max.z - geometry.boundingBox.min.z
+        };
+
+        var anchorX = geometry.userData.size.width * -params.anchor.x;
+        var anchorY = geometry.userData.size.height * -params.anchor.y;
+        var anchorZ = geometry.userData.size.depth * -params.anchor.z;
+        var matrix = new THREE.Matrix4().makeTranslation(anchorX, anchorY, anchorZ);
+
+        geometry.applyMatrix(matrix);
+
+        return geometry;
+    }
+
+
+    ////////////////////
+    // CLASSES
+    ////////////////////
+
+    function TextAnimation(textGeometry) {
+        var bufferGeometry = new THREE.BAS.ModelBufferGeometry(textGeometry);
+
+        var aAnimation = bufferGeometry.createAttribute('aAnimation', 2);
+        var aCentroid = bufferGeometry.createAttribute('aCentroid', 3);
+        var aControl0 = bufferGeometry.createAttribute('aControl0', 3);
+        var aControl1 = bufferGeometry.createAttribute('aControl1', 3);
+        var aEndPosition = bufferGeometry.createAttribute('aEndPosition', 3);
+
+        var faceCount = bufferGeometry.faceCount;
+        var i, i2, i3, i4, v;
+
+        var size = textGeometry.userData.size;
+
+        var maxDelayX = 2.0;
+        var maxDelayY = 0.25;
+        var minDuration = 2;
+        var maxDuration = 8;
+        var stretch = 0.25;
+
+        this.animationDuration = maxDelayX + maxDelayY + maxDuration - 3;
+        this._animationProgress = 0;
+
+        for (i = 0, i2 = 0, i3 = 0, i4 = 0; i < faceCount; i++, i2 += 6, i3 += 9, i4 += 12) {
+            var face = textGeometry.faces[i];
+            var centroid = THREE.BAS.Utils.computeCentroid(textGeometry, face);
+
+            // animation
+            var delayX = Math.max(0, (centroid.x / size.width) * maxDelayX);
+            var delayY = Math.max(0, (1.0 - (centroid.y / size.height)) * maxDelayY);
+            var duration = THREE.Math.randFloat(minDuration, maxDuration);
+
+            for (v = 0; v < 6; v += 2) {
+                aAnimation.array[i2 + v] = delayX + delayY + Math.random() * stretch;
+                aAnimation.array[i2 + v + 1] = duration;
+            }
+
+            // centroid
+            for (v = 0; v < 9; v += 3) {
+                aCentroid.array[i3 + v] = centroid.x;
+                aCentroid.array[i3 + v + 1] = centroid.y;
+                aCentroid.array[i3 + v + 2] = centroid.z;
+            }
+
+            // ctrl
+            var c0x = centroid.x + THREE.Math.randFloat(40, 120);
+            var c0y = centroid.y + size.height * THREE.Math.randFloat(0.0, 12.0);
+            var c0z = THREE.Math.randFloatSpread(120);
+
+            var c1x = centroid.x + THREE.Math.randFloat(80, 120) * -1;
+            var c1y = centroid.y + size.height * THREE.Math.randFloat(0.0, 12.0);
+            var c1z = THREE.Math.randFloatSpread(120);
+
+            for (v = 0; v < 9; v += 3) {
+                aControl0.array[i3 + v] = c0x;
+                aControl0.array[i3 + v + 1] = c0y;
+                aControl0.array[i3 + v + 2] = c0z;
+
+                aControl1.array[i3 + v] = c1x;
+                aControl1.array[i3 + v + 1] = c1y;
+                aControl1.array[i3 + v + 2] = c1z;
+            }
+
+            // end position
+            var x, y, z;
+
+            x = centroid.x + THREE.Math.randFloatSpread(120);
+            y = centroid.y + size.height * THREE.Math.randFloat(0.0, 12.0);
+            z = THREE.Math.randFloat(-20, 20);
+
+            for (v = 0; v < 9; v += 3) {
+                aEndPosition.array[i3 + v] = x;
+                aEndPosition.array[i3 + v + 1] = y;
+                aEndPosition.array[i3 + v + 2] = z;
             }
         }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        document.body.appendChild(css);
+
+        var material = new THREE.BAS.BasicAnimationMaterial({
+            shading: THREE.FlatShading,
+            side: THREE.DoubleSide,
+            transparent: true,
+            uniforms: {
+                uTime: {
+                    type: 'f',
+                    value: 0
+                }
+            },
+            shaderFunctions: [
+                THREE.BAS.ShaderChunk['cubic_bezier'],
+                THREE.BAS.ShaderChunk['ease_out_cubic']
+            ],
+            shaderParameters: [
+                'uniform float uTime;',
+                'attribute vec2 aAnimation;',
+                'attribute vec3 aCentroid;',
+                'attribute vec3 aControl0;',
+                'attribute vec3 aControl1;',
+                'attribute vec3 aEndPosition;'
+            ],
+            shaderVertexInit: [
+                'float tDelay = aAnimation.x;',
+                'float tDuration = aAnimation.y;',
+                'float tTime = clamp(uTime - tDelay, 0.0, tDuration);',
+                'float tProgress =  ease(tTime, 0.0, 1.0, tDuration);'
+                //'float tProgress = tTime / tDuration;'
+            ],
+            shaderTransformPosition: [
+                'vec3 tPosition = transformed - aCentroid;',
+                'tPosition *= 1.0 - tProgress;',
+                'tPosition += aCentroid;',
+                'tPosition += cubicBezier(tPosition, aControl0, aControl1, aEndPosition, tProgress);',
+                'transformed = tPosition;'
+
+                // 'vec3 tPosition = transformed;',
+                // 'tPosition *= 1.0 - tProgress;',
+                // 'tPosition += cubicBezier(transformed, aControl0, aControl1, aEndPosition, tProgress);',
+                // 'tPosition += mix(transformed, aEndPosition, tProgress);',
+                // 'transformed = tPosition;'
+            ]
+        }, {
+            diffuse: 0xffffff //0000
+        });
+
+        THREE.Mesh.call(this, bufferGeometry, material);
+
+        this.frustumCulled = false;
+    }
+    TextAnimation.prototype = Object.create(THREE.Mesh.prototype);
+    TextAnimation.prototype.constructor = TextAnimation;
+
+    Object.defineProperty(TextAnimation.prototype, 'animationProgress', {
+        get: function() {
+            return this._animationProgress;
+        },
+        set: function(v) {
+            this._animationProgress = v;
+            this.material.uniforms['uTime'].value = this.animationDuration * v;
+        }
+    });
+
+    function THREERoot(params) {
+        params = utils.extend({
+            antialias: false,
+
+            fov: 60,
+            zNear: 1,
+            zFar: 10000,
+
+            createCameraControls: true
+        }, params);
+
+        this.renderer = new THREE.WebGLRenderer({
+            antialias: params.antialias,
+            alpha: true
+        });
+        document.getElementById('three-container').appendChild(this.renderer.domElement);
+
+        this.camera = new THREE.PerspectiveCamera(
+            params.fov,
+            window.innerWidth / window.innerHeight,
+            params.zNear,
+            params.zfar
+        );
+
+        this.scene = new THREE.Scene();
+
+        if (params.createCameraControls) {
+            this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
+        }
+
+        this.resize = this.resize.bind(this);
+        this.tick = this.tick.bind(this);
+
+        this.resize();
+        this.tick();
+
+        window.addEventListener('resize', this.resize, false);
+    }
+    THREERoot.prototype = {
+        tick: function() {
+            this.update();
+            this.render();
+            requestAnimationFrame(this.tick);
+        },
+        update: function() {
+            this.controls && this.controls.update();
+        },
+        render: function() {
+            this.renderer.render(this.scene, this.camera);
+        },
+        resize: function() {
+            this.camera.aspect = window.innerWidth / window.innerHeight;
+            this.camera.updateProjectionMatrix();
+
+            this.renderer.setSize(window.innerWidth, window.innerHeight);
+        }
     };
+
+    ////////////////////
+    // UTILS
+    ////////////////////
+
+    var utils = {
+        extend: function(dst, src) {
+            for (var key in src) {
+                dst[key] = src[key];
+            }
+
+            return dst;
+        },
+        randSign: function() {
+            return Math.random() > 0.5 ? 1 : -1;
+        }
+    };
+
+    function createTweenScrubber(tween, seekSpeed) {
+        seekSpeed = seekSpeed || 0.001;
+
+        function stop() {
+            TweenMax.to(tween, 2, {
+                timeScale: 0
+            });
+        }
+
+        function resume() {
+            TweenMax.to(tween, 2, {
+                timeScale: 1
+            });
+        }
+
+        function seek(dx) {
+            var progress = tween.progress();
+            var p = THREE.Math.clamp((progress + (dx * seekSpeed)), 0, 1);
+
+            tween.progress(p);
+        }
+
+        var _cx = 0;
+
+        // desktop
+        var mouseDown = false;
+        document.body.style.cursor = 'pointer';
+
+        window.addEventListener('mousedown', function(e) {
+            mouseDown = true;
+            document.body.style.cursor = 'ew-resize';
+            _cx = e.clientX;
+            stop();
+        });
+        window.addEventListener('mouseup', function(e) {
+            mouseDown = false;
+            document.body.style.cursor = 'pointer';
+            resume();
+        });
+        window.addEventListener('mousemove', function(e) {
+            if (mouseDown === true) {
+                var cx = e.clientX;
+                var dx = cx - _cx;
+                _cx = cx;
+
+                seek(dx);
+            }
+        });
+        // mobile
+        window.addEventListener('touchstart', function(e) {
+            _cx = e.touches[0].clientX;
+            stop();
+            e.preventDefault();
+        });
+        window.addEventListener('touchend', function(e) {
+            resume();
+            e.preventDefault();
+        });
+        window.addEventListener('touchmove', function(e) {
+            var cx = e.touches[0].clientX;
+            var dx = cx - _cx;
+            _cx = cx;
+
+            seek(dx);
+            e.preventDefault();
+        });
+    }
+
+    // var TxtRotate = function(el, toRotate, period) {
+    //     this.toRotate = toRotate;
+    //     this.el = el;
+    //     this.period = parseInt(period, 10) || 2000;
+    //     this.txt = '';
+    //     this.tick();
+    //     this.isDeleting = false;
+    // };
+
+    // TxtRotate.prototype.tick = function() {
+    //     var fullTxt = this.toRotate;
+
+    //     if (this.isDeleting) {
+    //         this.txt = fullTxt.substring(0, this.txt.length - 1);
+    //     } else {
+    //         this.txt = fullTxt.substring(0, this.txt.length + 1);
+    //     }
+
+    //     this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+    //     var that = this;
+    //     var delta = 100;
+
+    //     if (this.isDeleting) {
+    //         delta /= 2;
+    //     }
+
+    //     if (!this.isDeleting && this.txt === fullTxt) {
+    //         delta = this.period;
+    //         this.isDeleting = true;
+    //     } else if (this.isDeleting && this.txt === '') {
+    //         this.isDeleting = false;
+    //         delta = 500;
+    //     }
+
+    //     setTimeout(function() {
+    //         that.tick();
+    //     }, delta);
+    // };
+
+    // window.onload = function() {
+    //     console.log('windows start');
+    //     var elements = document.getElementsByClassName('txt-rotate');
+    //     for (var i = 0; i < elements.length; i++) {
+    //         var toRotate = elements[i].getAttribute('data-rotate');
+    //         var period = elements[i].getAttribute('data-period');
+    //         if (toRotate) {
+    //             new TxtRotate(elements[i], toRotate, period);
+    //         }
+    //     }
+    //     // INJECT CSS
+    //     var css = document.createElement("style");
+    //     css.type = "text/css";
+    //     document.body.appendChild(css);
+    // };
     </script>
 </body>
 
