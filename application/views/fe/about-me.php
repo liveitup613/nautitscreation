@@ -269,7 +269,7 @@
                     </div>
                     <div class="position-absolute right-15px bottom-0px w-70" data-parallax-layout-ratio="1.1">
                         <img class="border-radius-6px"
-                            src="<?php echo base_url('assets/images/about-local-store1.png');?>" alt="" />
+                            src="<?php echo base_url('assets/images/about-local-store1.jpg');?>" alt="" />
                     </div>
                 </div>
                 <div class="col-12 col-lg-5 offset-lg-1 wow animate__fadeIn" data-wow-delay="0.4s">

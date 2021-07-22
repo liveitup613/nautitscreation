@@ -2827,11 +2827,11 @@ header.sticky .navbar.header-dark .navbar-toggler-line { background: #fff; }
 
 /* header logo */
 header .navbar .navbar-brand .default-logo {    
-    max-height: 100px!important;
+    max-height: 120px!important;
 }
 
 header .navbar .navbar-brand .alt-logo {   
-    max-height: 100px!important;
+    max-height: 120px!important;
 }
 
 header .navbar .navbar-brand .mobile-logo {   

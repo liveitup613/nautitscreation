@@ -170,11 +170,11 @@
                     <div class="d-flex flex-column">
                         <a href="<?php echo base_url('recipe');?>">
                             <div class="row">
-                                <div class="col-12 col-sm-6 cover-background order-2 xs-h-300px wow animate__fadeIn"
+                                <div class="col-12 col-sm-6 cover-background order-2 xs-h-300px lg-h-350px wow animate__fadeIn"
                                     data-wow-delay="0.2s"
                                     style="background-image: url('<?php echo base_url('assets/images/delicious_recipe.png');?>')">
                                 </div>
-                                <div class="col-12 col-sm-6 bg-extra-dark-gray order-1 wow animate__fadeIn"
+                                <div class="col-12 col-sm-6 bg-extra-dark-gray order-1 lg-h-350px wow animate__fadeIn"
                                     data-wow-delay="0.4s">
                                     <div
                                         class="text-center padding-6-rem-lr padding-8-rem-tb xl-padding-6-rem-tb xl-padding-4-rem-lr lg-padding-7-rem-lr sm-padding-6-rem-lr">
@@ -184,28 +184,19 @@
                                         <h4 class="alt-font text-white mb-0"><span
                                                 class="font-weight-600">Delicious</span> Recipes</h4>
                                     </div>
-                                </div>
+                                </div>                                
                             </div>
-                        </a>
-                        <a href="https://nauti-ts-creations.square.site/s/shop">
-                            <div class="row">
-                                <div class="col-12 col-sm-6 order-2 order-sm-1 px-0 cover-background xs-h-300px wow animate__fadeIn"
+                            <div class='row'>
+                                <div class="col-12 col-sm-6 order-2 order-sm-1 px-0 cover-background xs-h-300px lg-h-350px wow animate__fadeIn"
                                     data-wow-delay="0.6s"
-                                    style="background-image: url('<?php echo base_url('assets/images/healthy_food.png');?>')">
+                                    style="background-image: url('<?php echo base_url('assets/images/healthy_food.png');?>'); min-height: 350px;">
                                 </div>
-                                <div class="col-12 col-sm-6 order-1 order-sm-2 wow animate__fadeIn bg-light-cream"
-                                    data-wow-delay="0.8s">
-                                    <div
-                                        class="text-center padding-6-rem-lr padding-8-rem-tb xl-padding-6-rem-tb xl-padding-4-rem-lr lg-padding-7-rem-lr sm-padding-6-rem-lr">
-                                        <span
-                                            class="alt-font font-weight-500 text-golden letter-spacing-1px text-medium d-block text-uppercase margin-20px-bottom">Best
-                                            of foods</span>
-                                        <h4 class="alt-font text-extra-dark-gray mb-0"><span
-                                                class="font-weight-600">Healthy</span> Energetic Food</h4>
-                                    </div>
+                                <div class="col-12 col-sm-6 order-2 order-sm-1 px-0 cover-background xs-h-300px lg-h-350px wow animate__fadeIn"
+                                    data-wow-delay="0.6s"
+                                    style="background-image: url('<?php echo base_url('assets/images/healthy_food1.jpg');?>')">                                   
                                 </div>
                             </div>
-                        </a>
+                        </a>                        
                     </div>
                 </div>
             </div>
