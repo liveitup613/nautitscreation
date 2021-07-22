@@ -72,7 +72,7 @@
         </header>
         <!-- end header -->
         <!-- start page title -->
-        <section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('<?php echo base_url('assets/images/portfolio-bg.jpg');?>');">
+        <section class="half-section parallax" style="background-image:linear-gradient(to bottom, #9b9dd7, #fff);">
             <div class="container">
                 <div class="row align-items-stretch justify-content-center extra-small-screen">
                     <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">                        
@@ -80,10 +80,7 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end page title -->
-        <!-- start section -->
-        <section class="p-0">            
+
             <div class="container">
                 <div class="row">
                     <div class="col-12 filter-content">
@@ -99,7 +96,7 @@
                                     else
                                         echo '<a href="'.base_url('assets/videos/'.$resource['Attach']).'" class="popup-youtube">';
                                 ?>                                
-                                    <div class="portfolio-box">
+                                    <div class="portfolio-box box-shadow-portfolio">
                                         <div class="portfolio-image bg-gradient-sky-blue-pink">
                                         <?php
                                             if ($resource['Thumbnail'] == '')
@@ -127,6 +124,11 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- end page title -->
+        <!-- start section -->
+        <section class="p-0">            
+            
         </section>
         <!-- end section -->
         <!-- start footer -->
