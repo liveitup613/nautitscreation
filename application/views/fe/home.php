@@ -33,7 +33,7 @@
     <!-- start header -->
     <header>
         <nav
-            class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
+            class="navbar navbar-expand-lg navbar-light bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
             <div class="container-fluid nav-header-container">
                 <div class="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0 padding-5px-tb">
                     <a class="navbar-brand" href="<?php base_url('');?>">
