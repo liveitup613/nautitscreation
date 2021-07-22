@@ -96,7 +96,7 @@
         <div id="three-container" style='position:absolute; z-index: 1000'></div>
         <div class="position-relative" style='height: 100vh'>
             <div class="row justify-content-center">
-                <video autoplay="" loop="" muted="" style='display: block; position: absolute; width: auto; height: auto; -webkit-filter: brightness(.5); filter: brightness(.5);'>
+                <video autoplay="" loop="" muted="" style='max-height: 120vh; display: block; position: absolute; width: auto; height: auto; -webkit-filter: brightness(.5); filter: brightness(.5);'>
                     <source src="<?php echo base_url('assets/videos/background.webm');?>" type="video/webm">
                     <source src="<?php echo base_url('assets/videos/background.mp4');?>" type="video/mp4">
                 </video>               
