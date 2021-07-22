@@ -40,7 +40,7 @@
 
     @media (max-width: 768px) {
         svg{
-            font: 1.9rem 'Roboto';
+            font: 1.5rem 'Roboto';
         }
     }
 
@@ -554,62 +554,7 @@
         root.renderer.setClearColor(0x000000, 0);
         root.renderer.setPixelRatio(window.devicePixelRatio || 1);
         root.camera.position.set(0, 0, 400);
-
-
-        //create the text animation variable
-
-        var innerWidth = window.innerWidth;
-
-        var textAnimation = createTextAnimation("WELCOME TO");
-        if (innerWidth > 768)
-            textAnimation.position.y = 50;
-        else
-            textAnimation.position.y = 70;
-
-        root.scene.add(textAnimation);
-
-        var textAnimation1 = createTextAnimation("NAUTI T'S CREATIONS");
-        if (innerWidth > 768)
-            textAnimation1.position.y = -10;
-        else
-            textAnimation1.position.y = 30;
-
-        root.scene.add(textAnimation1);
-
-        //set the timeline aspects of the animation
-
-        var tl = new TimelineMax({
-            repeat: -1, //-1 loop
-            repeatDelay: 2.0,
-            yoyo: true
-        });
-        tl.fromTo(textAnimation, 3, //4
-            {
-                animationProgress: 1.0
-            }, {
-                animationProgress: 0.0,
-                ease: Power1.easeInOut
-            },
-            0
-        );
-
-        var t2 = new TimelineMax({
-            repeat: -1, //-1 loop
-            repeatDelay: 2.0,
-            yoyo: true
-        });
-        t2.fromTo(textAnimation1, 3, //4
-            {
-                animationProgress: 1.0
-            }, {
-                animationProgress: 0.0,
-                ease: Power1.easeInOut
-            },
-            0
-        );
-
-        createTweenScrubber(tl);
-        createTweenScrubber(t2);
+       
     }
 
     //create the text to be animated
@@ -812,11 +757,6 @@
         }
     });
 
-    function resizeEvent() {
-
-        console.log(window.innerWidth);
-    }
-
     function THREERoot(params) {
         params = utils.extend({
             antialias: false,
@@ -847,12 +787,7 @@
             this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
         }
 
-        var resizeEvent = function(threeRoot) {
-            console.log(window.innerWidth);
-            return threeRoot.resize.bind(threeRoot);
-        }
-
-        this.resize = resizeEvent(this);
+        this.resize = this.resize.bind(this);
         this.tick = this.tick.bind(this);
 
         this.resize();
@@ -873,10 +808,65 @@
             this.renderer.render(this.scene, this.camera);
         },
         resize: function() {
+            console.log(window.innerWidth);
+            var innerWidth = window.innerWidth;
             this.camera.aspect = window.innerWidth / window.innerHeight;
             this.camera.updateProjectionMatrix();
 
             this.renderer.setSize(window.innerWidth, window.innerHeight);
+
+            this.scene.children = [];
+
+            var innerWidth = window.innerWidth;
+
+            var textAnimation = createTextAnimation("WELCOME TO");
+            if (innerWidth > 768)
+                textAnimation.position.y = 50;
+            else
+                textAnimation.position.y = 70;
+
+            this.scene.add(textAnimation);
+
+            var textAnimation1 = createTextAnimation("NAUTI T'S CREATIONS");
+            if (innerWidth > 768)
+                textAnimation1.position.y = -10;
+            else
+                textAnimation1.position.y = 30;
+
+            this.scene.add(textAnimation1);
+
+            var tl = new TimelineMax({
+                repeat: -1, //-1 loop
+                repeatDelay: 2.0,
+                yoyo: true
+            });
+            tl.fromTo(textAnimation, 3, //4
+                {
+                    animationProgress: 1.0
+                }, {
+                    animationProgress: 0.0,
+                    ease: Power1.easeInOut
+                },
+                0
+            );
+
+            var t2 = new TimelineMax({
+                repeat: -1, //-1 loop
+                repeatDelay: 2.0,
+                yoyo: true
+            });
+            t2.fromTo(textAnimation1, 3, //4
+                {
+                    animationProgress: 1.0
+                }, {
+                    animationProgress: 0.0,
+                    ease: Power1.easeInOut
+                },
+                0
+            );
+
+            createTweenScrubber(tl);
+            createTweenScrubber(t2);
         }
     };
 
@@ -964,62 +954,7 @@
             e.preventDefault();
         });
     }
-
-    // var TxtRotate = function(el, toRotate, period) {
-    //     this.toRotate = toRotate;
-    //     this.el = el;
-    //     this.period = parseInt(period, 10) || 2000;
-    //     this.txt = '';
-    //     this.tick();
-    //     this.isDeleting = false;
-    // };
-
-    // TxtRotate.prototype.tick = function() {
-    //     var fullTxt = this.toRotate;
-
-    //     if (this.isDeleting) {
-    //         this.txt = fullTxt.substring(0, this.txt.length - 1);
-    //     } else {
-    //         this.txt = fullTxt.substring(0, this.txt.length + 1);
-    //     }
-
-    //     this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
-
-    //     var that = this;
-    //     var delta = 100;
-
-    //     if (this.isDeleting) {
-    //         delta /= 2;
-    //     }
-
-    //     if (!this.isDeleting && this.txt === fullTxt) {
-    //         delta = this.period;
-    //         this.isDeleting = true;
-    //     } else if (this.isDeleting && this.txt === '') {
-    //         this.isDeleting = false;
-    //         delta = 500;
-    //     }
-
-    //     setTimeout(function() {
-    //         that.tick();
-    //     }, delta);
-    // };
-
-    // window.onload = function() {
-    //     console.log('windows start');
-    //     var elements = document.getElementsByClassName('txt-rotate');
-    //     for (var i = 0; i < elements.length; i++) {
-    //         var toRotate = elements[i].getAttribute('data-rotate');
-    //         var period = elements[i].getAttribute('data-period');
-    //         if (toRotate) {
-    //             new TxtRotate(elements[i], toRotate, period);
-    //         }
-    //     }
-    //     // INJECT CSS
-    //     var css = document.createElement("style");
-    //     css.type = "text/css";
-    //     document.body.appendChild(css);
-    // };
+    
     </script>
 </body>
 
