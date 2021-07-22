@@ -72,7 +72,7 @@
         </header>
         <!-- end header -->
         <!-- start page title -->
-        <section class="half-section parallax" style="background-image:linear-gradient(to bottom, #9b9dd7, #fff);">
+        <section class="half-section parallax" style="background-image:linear-gradient(to bottom, #b484ce, #fff);">
             <div class="container">
                 <div class="row align-items-stretch justify-content-center extra-small-screen">
                     <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">                        
