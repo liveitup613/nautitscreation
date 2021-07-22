@@ -157,6 +157,12 @@
                     style='max-height: 120vh; display: block; position: absolute; width: auto; height: auto; -webkit-filter: brightness(1.0); filter: brightness(1.0); '>                    
                     <source src="<?php echo base_url('assets/videos/background.mp4');?>" type="video/mp4">
                 </video>
+                <div style='position:absolute; top: 0; left: 0; width: 100%; height: 100%; '>
+                    <img src="<?php echo base_url('assets/images/jar1.png');?>" style='position: absolute; top: 20%; left: 20px; width: 100px;'>
+                    <img src="<?php echo base_url('assets/images/jar2.png');?>" style='position: absolute; top: 20%; right: 20px; width: 100px;'>
+                    <img src="<?php echo base_url('assets/images/jar3.png');?>" style='position: absolute; bottom: 20px; left: 20px; width: 100px;'>
+                    <img src="<?php echo base_url('assets/images/jar4.png');?>" style='position: absolute; bottom: 20px; right: 20px; width: 100px;'>
+                </div>
                 <div style='position: absolute; bottom: 20%; z-index: 2000'>
                     <svg viewBox="0 0 960 300">
                         <symbol id="s-text">
