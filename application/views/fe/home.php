@@ -156,13 +156,7 @@
                 <video autoplay="" loop="" muted=""
                     style='max-height: 120vh; display: block; position: absolute; width: auto; height: auto; -webkit-filter: brightness(1.0); filter: brightness(1.0); '>                    
                     <source src="<?php echo base_url('assets/videos/background.mp4');?>" type="video/mp4">
-                </video>
-                <div style='position:absolute; top: 0; left: 0; width: 100%; height: 100%; '>
-                    <img src="<?php echo base_url('assets/images/jar1.png');?>" style='position: absolute; top: 20%; left: 20px; width: 100px;'>
-                    <img src="<?php echo base_url('assets/images/jar2.png');?>" style='position: absolute; top: 20%; right: 20px; width: 100px;'>
-                    <img src="<?php echo base_url('assets/images/jar3.png');?>" style='position: absolute; bottom: 20px; left: 20px; width: 100px;'>
-                    <img src="<?php echo base_url('assets/images/jar4.png');?>" style='position: absolute; bottom: 20px; right: 20px; width: 100px;'>
-                </div>
+                </video>               
                 <div style='position: absolute; bottom: 20%; z-index: 2000'>
                     <svg viewBox="0 0 960 300">
                         <symbol id="s-text">
@@ -187,12 +181,13 @@
     <!-- start section -->
     <section id="about"
         class="padding-nine-top padding-seven-bottom xs-padding-8-rem-top xs-padding-8-rem-bottom overlap-height xs-background-image-none wow animate__fadeIn"
-        style="background: url('<?php echo base_url('assets/images/home-restaurant-bg-01.jpg');?>') no-repeat center top">
+        style="background: url('<?php echo base_url('assets/images/home-restaurant-bg-01.jpg');?>') no-repeat center top ,
+        url('<?php echo base_url('assets/images/jars.png');?>') right center no-repeat">
         <div class="container">
             <div class="row align-items-center overlap-gap-section">
                 <div class="col-12 col-lg-2 md-margin-25px-bottom text-center text-sm-left wow animate__zoomIn"
                     data-wow-delay="0.1s">
-                    <img src="<?php echo base_url('assets/images/home-restaurant-img-01.png');?>" alt="" />
+                    <img src="<?php echo base_url('assets/images/jar3.png');?>" alt="" style='width: 120px;'/>
                 </div>
                 <div class="col-12 col-xl-4 col-lg-5 col-sm-7 text-center text-sm-left md-margin-20px-bottom wow animate__fadeIn"
                     data-wow-delay="0.3s">
