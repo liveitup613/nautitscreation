@@ -93,19 +93,13 @@
     <section class="parallax p-0" data-parallax-background-ratio="0.5"
         style="background-image: url('<?php echo base_url('assets/images/background.png');?>');">        
         <div class="opacity-extra-medium-2 bg-extra-dark-gray"></div>
-        <div id="three-container" style='position:absolute;'></div>
-        <div class="position-relative">
+        <div id="three-container" style='position:absolute; z-index: 1000'></div>
+        <div class="position-relative" style='height: 100vh'>
             <div class="row justify-content-center">
-                <div
-                    class="col-12 col-xl-8 col-md-10 col-lg-8 full-screen flex-column d-flex justify-content-center text-center md-landscape-h-600px">
-                    <div class="padding-3-half-rem-all lg-padding-4-half-rem-all xs-padding-2-rem-all">
-                        <span
-                            class="txt-rotate alt-font text-large text-uppercase letter-spacing-3px text-white font-weight-600 opacity-7 d-block"
-                            data-period="2000" data-rotate="It's not just jelly, it's a creation"
-                            style='text-shadow: 0 0 10px tomato;'></span>
-                        <!-- <span class="alt-font text-medium text-uppercase letter-spacing-3px text-black font-weight-500 opacity-7 d-block">It's not just jelly, it's a creation</span> -->
-                    </div>
-                </div>
+                <video autoplay="" loop="" muted="" style='display: block; position: absolute; width: auto; height: auto; -webkit-filter: brightness(.5); filter: brightness(.5);'>
+                    <source src="<?php echo base_url('assets/videos/background.webm');?>" type="video/webm">
+                    <source src="<?php echo base_url('assets/videos/background.mp4');?>" type="video/mp4">
+                </video>               
                 <div class="down-section text-center"><a href="#about" class="section-link up-down-ani"><i
                             class="ti-mouse icon-small bounce text-white"></i></a></div>
             </div>
