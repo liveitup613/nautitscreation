@@ -26,6 +26,57 @@
         text-align: center;
         pointer-events: none;
     }
+
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+   
+
+    svg {
+        display: block;
+        font: 2.2rem 'Roboto';
+        width: 960px;
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    .text-copy {
+        fill: none;
+        stroke: white;
+        stroke-dasharray: 6% 29%;
+        stroke-width: 1px;
+        stroke-dashoffset: 0%;
+        animation: stroke-offset 5.5s infinite linear;
+    }
+
+    .text-copy:nth-child(1) {
+        stroke: #fff;
+        animation-delay: -1;
+    }
+
+    .text-copy:nth-child(2) {
+        stroke: #fff;
+        animation-delay: -2s;
+    }
+
+    .text-copy:nth-child(3) {
+        stroke: #fff;
+        animation-delay: -3s;
+    }
+
+    .text-copy:nth-child(4) {
+        stroke: #fff;
+        animation-delay: -4s;
+    }
+
+    .text-copy:nth-child(5) {
+        stroke: #fff;
+        animation-delay: -5s;
+    }
+
+    @keyframes stroke-offset {
+        100% {
+            stroke-dashoffset: -35%;
+        }
+    }
     </style>
 </head>
 
@@ -91,15 +142,30 @@
     <!-- end header -->
     <!-- start hero section -->
     <section class="parallax p-0" data-parallax-background-ratio="0.5"
-        style="background-image: url('<?php echo base_url('assets/images/background_1.png');?>'); ">        
+        style="background-image: url('<?php echo base_url('assets/images/background_1.png');?>'); ">
         <div class="opacity-extra-medium-2 bg-extra-dark-gray"></div>
         <div id="three-container" style='position:absolute; z-index: 1000'></div>
         <div class="position-relative" style='height: 100vh'>
             <div class="row justify-content-center">
-                <video autoplay="" loop="" muted="" style='max-height: 120vh; display: block; position: absolute; width: auto; height: auto; -webkit-filter: brightness(1.0); filter: brightness(1.0); '>
-                    <source src="<?php echo base_url('assets/videos/background.webm');?>" type="video/webm">
+                <video autoplay="" loop="" muted=""
+                    style='max-height: 120vh; display: block; position: absolute; width: auto; height: auto; -webkit-filter: brightness(1.0); filter: brightness(1.0); '>                    
                     <source src="<?php echo base_url('assets/videos/background.mp4');?>" type="video/mp4">
-                </video>               
+                </video>
+                <div style='position: absolute; bottom: 20%; z-index: 2000'>
+                    <svg viewBox="0 0 960 300">
+                        <symbol id="s-text">
+                            <text text-anchor="middle" x="50%" y="80%">IT'S NOT JUST JELLY, IT'S A CREATION</text>
+                        </symbol>
+
+                        <g class="g-ants">
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                            <use xlink:href="#s-text" class="text-copy"></use>
+                        </g>
+                    </svg>
+                </div>
                 <div class="down-section text-center"><a href="#about" class="section-link up-down-ani"><i
                             class="ti-mouse icon-small bounce text-white"></i></a></div>
             </div>
@@ -178,7 +244,7 @@
                                         <h4 class="alt-font text-white mb-0"><span
                                                 class="font-weight-600">Delicious</span> Recipes</h4>
                                     </div>
-                                </div>                                
+                                </div>
                             </div>
                             <div class='row'>
                                 <div class="col-12 col-sm-6 order-2 order-sm-1 px-0 cover-background xs-h-300px lg-h-350px wow animate__fadeIn"
@@ -187,10 +253,10 @@
                                 </div>
                                 <div class="col-12 col-sm-6 order-2 order-sm-1 px-0 cover-background xs-h-300px lg-h-350px wow animate__fadeIn"
                                     data-wow-delay="0.6s"
-                                    style="background-image: url('<?php echo base_url('assets/images/healthy_food1.jpg');?>')">                                   
+                                    style="background-image: url('<?php echo base_url('assets/images/healthy_food1.jpg');?>')">
                                 </div>
                             </div>
-                        </a>                        
+                        </a>
                     </div>
                 </div>
             </div>
@@ -473,12 +539,12 @@
     function init() {
         var root = new THREERoot({
             createCameraControls: false,
-            antialias: true,            
+            antialias: true,
             fov: 60
         });
 
         //setup the scene
-        root.renderer.setClearColor( 0x000000, 0 ); 
+        root.renderer.setClearColor(0x000000, 0);
         root.renderer.setPixelRatio(window.devicePixelRatio || 1);
         root.camera.position.set(0, 0, 400);
 
