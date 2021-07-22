@@ -38,6 +38,12 @@
         margin: 0 auto;
     }
 
+    @media (max-width: 768px) {
+        svg{
+            font: 1.9rem 'Roboto';
+        }
+    }
+
     .text-copy {
         fill: none;
         stroke: white;
@@ -551,12 +557,22 @@
 
         //create the text animation variable
 
+        var innerWidth = window.innerWidth;
+
         var textAnimation = createTextAnimation("WELCOME TO");
-        textAnimation.position.y = 50;
+        if (innerWidth > 768)
+            textAnimation.position.y = 50;
+        else
+            textAnimation.position.y = 70;
+
         root.scene.add(textAnimation);
 
         var textAnimation1 = createTextAnimation("NAUTI T'S CREATIONS");
-        textAnimation1.position.y = -10;
+        if (innerWidth > 768)
+            textAnimation1.position.y = -10;
+        else
+            textAnimation1.position.y = 30;
+
         root.scene.add(textAnimation1);
 
         //set the timeline aspects of the animation
@@ -598,8 +614,18 @@
     //create the text to be animated
 
     function createTextAnimation(text) {
+        var innerWidth = window.innerWidth;
+        var size = 0;
+
+        if (innerWidth >  1024)
+            size = 14;
+        else if (innerWidth > 768)
+            size = 10;
+        else
+            size = 7;
+
         var geometry = generateTextGeometry(text, {
-            size: 14,
+            size: size,
             height: 0,
             font: 'droid sans',
             weight: 'bold',
