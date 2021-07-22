@@ -630,7 +630,7 @@ blockquote footer { color: #828282; }
 .box-shadow-medium, .box-shadow-medium-hover:hover { box-shadow: 0 0 20px rgba(0,0,0,.08); transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
 .box-shadow-small, .box-shadow-small-hover:hover { box-shadow: 0 0 15px rgba(0,0,0,.08); transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
 .box-shadow-very-light-hover:hover, .box-shadow-light-hover:hover, .box-shadow-dark-hover:hover, .box-shadow-large-hover:hover, .box-shadow-extra-large-hover:hover, .box-shadow-medium-hover:hover, .box-shadow-small-hover:hover, .box-shadow-double-large-hover:hover{-moz-transform: translate3d(0, -3px, 0); -o-transform: translate3d(0, -3px, 0); -ms-transform: translate3d(0, -3px, 0); -webkit-transform: translate3d(0, -3px, 0); transform: translate3d(0, -3px, 0);}
-
+.box-shadow-portfolio, .box-shadow-portfolio:hover {box-shadow: 5px 5px 10px rgba(0,0,0,.6); transition: all 0.3s ease-in-out; -moz-transition: all 0.3s ease-in-out; -webkit-transition: all 0.3s ease-in-out; -ms-transition: all 0.3s ease-in-out; -o-transition: all 0.3s ease-in-out; }
 /* text shadow */
 .text-shadow-large { text-shadow: 0 0 50px rgba(0, 0, 0, 0.9);}
 .text-shadow-extra-large { text-shadow: 0 0 60px rgba(0, 0, 0, 0.9);}

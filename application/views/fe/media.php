@@ -72,7 +72,7 @@
         </header>
         <!-- end header -->
         <!-- start page title -->
-        <section class="half-section parallax" data-parallax-background-ratio="0.5" style="background-image:url('<?php echo base_url('assets/images/portfolio-bg.jpg');?>');">
+        <section class="half-section parallax" data-parallax-background-ratio="0.3" style="background-image:url('<?php echo base_url('assets/images/media_background.jpg');?>');  background-repeat:no-repeat;">
             <div class="container">
                 <div class="row align-items-stretch justify-content-center extra-small-screen">
                     <div class="col-12 col-xl-6 col-lg-7 col-md-8 page-title-extra-small text-center d-flex justify-content-center flex-column">                        
@@ -80,10 +80,6 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- end page title -->
-        <!-- start section -->
-        <section class="p-0">
             <div class="container">
                 <div class="row">
                     <div class="col-12 text-center">
@@ -109,7 +105,7 @@
                             <!-- start portfolio item -->
                             <li class="grid-item wow photo animate__fadeIn">
                                 <a href="<?php echo base_url('assets/images/photos/'. $resource['Attach']);?>" data-group="lightbox-gallery" class="lightbox-group-gallery-item">
-                                    <div class="portfolio-box">
+                                    <div class="portfolio-box box-shadow-portfolio">
                                         <div class="portfolio-image bg-gradient-sky-blue-pink">
                                             <img src="<?php echo base_url('assets/images/photos/' . $resource['Attach']);?>" alt="" />
                                             <div class="portfolio-hover justify-content-end d-flex flex-column padding-50px-tb xl-padding-30px-tb">
@@ -132,7 +128,7 @@
                                     else
                                         echo '<a href="'.base_url('assets/videos/'.$resource['Attach']).'" class="popup-youtube">';
                                 ?>
-                                    <div class="portfolio-box">
+                                    <div class="portfolio-box box-shadow-portfolio">
                                         <div class="portfolio-image bg-gradient-sky-blue-pink">
                                             <?php
                                                 if ($resource['Thumbnail'] == '')
@@ -156,6 +152,12 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- end page title -->
+        <!-- start section -->
+        <section class="p-0">
+            
+            
         </section>
         <!-- end section -->
         <!-- start footer -->
