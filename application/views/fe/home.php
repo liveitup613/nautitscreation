@@ -91,12 +91,12 @@
     <!-- end header -->
     <!-- start hero section -->
     <section class="parallax p-0" data-parallax-background-ratio="0.5"
-        style="background-image: url('<?php echo base_url('assets/images/background_1.png');?>'); -webkit-filter: brightness(.7); filter: brightness(.7);">        
+        style="background-image: url('<?php echo base_url('assets/images/background_1.png');?>'); ">        
         <div class="opacity-extra-medium-2 bg-extra-dark-gray"></div>
         <div id="three-container" style='position:absolute; z-index: 1000'></div>
         <div class="position-relative" style='height: 100vh'>
             <div class="row justify-content-center">
-                <video autoplay="" loop="" muted="" style='max-height: 120vh; display: block; position: absolute; width: auto; height: auto; '>
+                <video autoplay="" loop="" muted="" style='max-height: 120vh; display: block; position: absolute; width: auto; height: auto; -webkit-filter: brightness(.7); filter: brightness(.7); '>
                     <source src="<?php echo base_url('assets/videos/background.webm');?>" type="video/webm">
                     <source src="<?php echo base_url('assets/videos/background.mp4');?>" type="video/mp4">
                 </video>               
