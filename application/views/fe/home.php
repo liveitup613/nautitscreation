@@ -811,6 +811,11 @@
         }
     });
 
+    function resizeEvent() {
+
+        console.log(window.innerWidth);
+    }
+
     function THREERoot(params) {
         params = utils.extend({
             antialias: false,
@@ -841,13 +846,18 @@
             this.controls = new THREE.OrbitControls(this.camera, this.renderer.domElement);
         }
 
-        this.resize = this.resize.bind(this);
+        var resizeEvent = function(threeRoot) {
+            console.log(window.innerWidth);
+            return threeRoot.resize.bind(threeRoot);
+        }
+
+        this.resize = resizeEvent(this);
         this.tick = this.tick.bind(this);
 
         this.resize();
         this.tick();
 
-        window.addEventListener('resize', this.resize, false);
+        window.addEventListener('resize', this.resize, true);
     }
     THREERoot.prototype = {
         tick: function() {
