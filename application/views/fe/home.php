@@ -737,7 +737,7 @@
                 // 'transformed = tPosition;'
             ]
         }, {
-            diffuse: 0xffffff //0000
+            diffuse: 0xf00 //0000
         });
 
         THREE.Mesh.call(this, bufferGeometry, material);
