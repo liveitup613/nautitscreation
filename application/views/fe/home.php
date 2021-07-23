@@ -703,7 +703,7 @@
                     type: 'f',
                     value: 0
                 }
-            },
+            },           
             shaderFunctions: [
                 THREE.BAS.ShaderChunk['cubic_bezier'],
                 THREE.BAS.ShaderChunk['ease_out_cubic']
@@ -735,12 +735,12 @@
                 // 'tPosition += cubicBezier(transformed, aControl0, aControl1, aEndPosition, tProgress);',
                 // 'tPosition += mix(transformed, aEndPosition, tProgress);',
                 // 'transformed = tPosition;'
-            ]
+            ],
         }, {
-            diffuse: 0xf00 //0000
+            diffuse: 0xed4264 //0000
         });
-
-        THREE.Mesh.call(this, bufferGeometry, material);
+       
+        THREE.Mesh.call(this, bufferGeometry, material);        
 
         this.frustumCulled = false;
     }
