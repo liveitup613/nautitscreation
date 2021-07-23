@@ -71,7 +71,7 @@
         </header>
         <!-- end header -->
         <!-- start page title -->
-        <section class="parallax half-section" data-parallax-background-ratio="0.5" style="background-image:url('<?php echo base_url('assets/images/faq_background.png');?>');">
+        <section class="parallax half-section" data-parallax-background-ratio="0.5" style="background-image:url('<?php echo base_url('assets/images/faq_background.jpg');?>');">
             <div class="opacity-medium bg-extra-dark-gray"></div>
             <div class="container">
                 <div class="row justify-content-center">
@@ -123,52 +123,6 @@
                                 <?php
                             }
                             ?>
-                            
-                            <!-- start accordion item -->
-                            <div class="panel bg-white box-shadow-small border-radius-5px">
-                                <div class="panel-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo" aria-expanded="false">
-                                        <div class="panel-title">
-                                            <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">Am i allowed to modify the item that i purchased?</span>
-                                            <i class="indicator fas fa-angle-right text-fast-blue icon-extra-small"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="collapseTwo" class="panel-collapse collapse" data-parent="#accordion2">
-                                    <div class="panel-body">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever when an unknown printer.</div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                            <!-- start accordion item -->
-                            <div class="panel bg-white box-shadow-small border-radius-5px">
-                                <div class="panel-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree" aria-expanded="false">
-                                        <div class="panel-title">
-                                            <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">i'm not sure if my use is covered. what should i do?</span>
-                                            <i class="indicator fas fa-angle-right text-fast-blue icon-extra-small"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="collapseThree" class="panel-collapse collapse" data-parent="#accordion2">
-                                    <div class="panel-body">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever when an unknown printer.</div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
-                            <!-- start accordion item -->
-                            <div class="panel bg-white box-shadow-small border-radius-5px">
-                                <div class="panel-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour" aria-expanded="false">
-                                        <div class="panel-title">
-                                            <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">What do you mean by item and end product?</span>
-                                            <i class="indicator fas fa-angle-right text-fast-blue icon-extra-small"></i>
-                                        </div>
-                                    </a>
-                                </div>
-                                <div id="collapseFour" class="panel-collapse collapse" data-parent="#accordion2">
-                                    <div class="panel-body">Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever when an unknown printer.</div>
-                                </div>
-                            </div>
-                            <!-- end accordion item -->
                         </div>
                     </div>     
                 </div>

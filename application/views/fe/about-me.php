@@ -264,13 +264,8 @@
                 <div class="col-12 col-lg-6 margin-70px-top lg-margin-30px-top md-margin-50px-bottom wow animate__fadeIn"
                     data-wow-delay="0.2s">
                     <div class="w-70 border-radius-6px overflow-hidden position-relative">
-                        <img src="<?php echo base_url('assets/images/about-local-store.png');?>" alt="" />
-                        <div class="opacity-extra-medium bg-gradient-sky-blue-pink"></div>
-                    </div>
-                    <div class="position-absolute right-15px bottom-0px w-70" data-parallax-layout-ratio="1.1">
-                        <img class="border-radius-6px"
-                            src="<?php echo base_url('assets/images/about-local-store1.jpg');?>" alt="" />
-                    </div>
+                        <img class='border-radius-6px' src="<?php echo base_url('assets/images/about-local-store1.jpg');?>" alt="" />                        
+                    </div>                    
                 </div>
                 <div class="col-12 col-lg-5 offset-lg-1 wow animate__fadeIn" data-wow-delay="0.4s">
                     <div class="alt-font text-extra-medium font-weight-500 margin-30px-bottom media">

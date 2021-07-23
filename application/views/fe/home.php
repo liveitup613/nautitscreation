@@ -256,7 +256,7 @@
                             <div class='row'>
                                 <div class="col-12 col-sm-6 order-2 order-sm-1 px-0 cover-background xs-h-300px lg-h-350px wow animate__fadeIn"
                                     data-wow-delay="0.6s"
-                                    style="background-image: url('<?php echo base_url('assets/images/healthy_food.png');?>'); min-height: 350px;">
+                                    style="background-image: url('<?php echo base_url('assets/images/healthy_food.jpeg');?>'); min-height: 350px;">
                                 </div>
                                 <div class="col-12 col-sm-6 order-2 order-sm-1 px-0 cover-background xs-h-300px lg-h-350px wow animate__fadeIn"
                                     data-wow-delay="0.6s"

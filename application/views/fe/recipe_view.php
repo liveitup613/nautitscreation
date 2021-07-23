@@ -19,7 +19,7 @@
         <!-- start header -->
         <header>
             <!-- start navigation -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top header-reverse-scroll">
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent header-light fixed-top header-reverse-scroll">
                 <div class="container-lg nav-header-container">
                     <div class="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0">
                         <a class="navbar-brand" href="<?php echo base_url();?>">
@@ -72,13 +72,13 @@
         </header>
         <!-- end header -->
          <!-- start banner section -->
-         <section class="big-section cover-background overlap-height padding-70px-bottom" style="background-image: linear-gradient(to bottom, #6504E9, #fff);">
+         <section class="big-section cover-background overlap-height padding-70px-bottom" style="background-image: url('<?php echo base_url('assets/images/recipe_detail_background.jpg');?>');">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-xl-6 col-lg-7 col-sm-8 overlap-gap-section text-center">
                         <div class="d-inline-block text-center text-uppercase margin-25px-bottom text-yellow-ochre-light">                            
                         </div>
-                        <h4 class="alt-font text-white font-weight-500 letter-spacing-minus-1px margin-35px-bottom"><?php echo $Recipe['Title'];?></h4>
+                        <h4 class="alt-font text-black font-weight-500 letter-spacing-minus-1px margin-35px-bottom"><?php echo $Recipe['Title'];?></h4>
                     </div>
                 </div>
             </div>
