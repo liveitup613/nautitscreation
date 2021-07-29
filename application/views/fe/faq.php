@@ -108,14 +108,14 @@
                             <!-- start accordion item -->
                             <div class="panel bg-white box-shadow-small border-radius-5px">
                                 <div class="panel-heading active-accordion">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne" aria-expanded="false">
+                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $count;?>" aria-expanded="false">
                                         <div class="panel-title">
                                             <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500"><?php echo $row['Name'];?></span>
                                             <i class="indicator fas fa-angle-down text-fast-blue icon-extra-small"></i>
                                         </div>
                                     </a>
                                 </div>
-                                <div id="collapseOne" class="panel-collapse collapse <?php echo ($count == 1 ? 'show' : '');?>" data-parent="#accordion2">
+                                <div id="collapse<?php echo $count;?>" class="panel-collapse collapse <?php echo ($count == 1 ? 'show' : '');?>" data-parent="#accordion2">
                                     <div class="panel-body"><?php echo $row['Value'];?></div>
                                 </div>
                             </div>
