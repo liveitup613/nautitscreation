@@ -85,6 +85,34 @@
                                                                 <div class="profile-pic">
                                                                     <img src="<?php echo base_url('assets/images/photos/'.$resource['Attach']);?>" class="img-responsive" alt="">
                                                                 </div>
+                                                                <div class="profile-title">
+                                                                    <p>
+                                                                    <?php 
+                                                                        switch ($resource['Title']) {
+                                                                            case 'championship':
+                                                                                echo 'World Food Championships';
+                                                                                break;
+                                                                            case 'appetizer':
+                                                                                echo 'Appetizers';
+                                                                                break;
+                                                                            case 'sweet_treat':
+                                                                                echo 'Sweet Treats';
+                                                                                break;
+                                                                            case 'meat':
+                                                                                echo 'Meats';
+                                                                                break;
+                                                                            case 'cocktail':
+                                                                                echo 'Cocktails';
+                                                                                break;
+                                                                            case 'side_dish':
+                                                                                echo 'Side Dishes';
+                                                                                break;
+                                                                            case '':
+                                                                                echo 'None';
+                                                                        }                                                                        
+                                                                    ?>
+                                                                    </p>
+                                                                </div>
                                                                     
                                                                 <!-- END SIDEBAR USERPIC -->
                                                                 <!-- SIDEBAR BUTTONS -->
@@ -137,9 +165,23 @@
                                             <label class="control-label col-md-3">Photo</label>
                                             <div class='col-md-9'>
                                                 <input type='hidden' name='Type' value='Photo'>
-                                                <input type='file' name='resource' id='resource' accept=".jpg,.png,.bmp,.gif"required>
+                                                <input type='file' name='resource' id='resource' accept=".jpg,.png,.bmp,.gif" required>
                                             </div>
-                                        </div>                                                                                               
+                                        </div>     
+                                        <div class='form-group'>
+                                            <label class='control-label col-md-3'>Category</label>
+                                            <div class='col-md-9'>
+                                                <select class='form-control' id='Category' name='Title'>
+                                                    <option value='championship'>World Food Championship</option>
+                                                    <option value='appetizer'>Appetizers</option>
+                                                    <option value='sweet_treat'>Sweet Treats</option>
+                                                    <option value='meat'>Meats</option>
+                                                    <option value='cocktail'>Cocktails</option>
+                                                    <option value='side_dish'>Side Dishes</option>
+                                                    <option value=''>None</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                     </div>                                    
                                 </form>
                             </div>
@@ -177,7 +219,21 @@
                                         </div>           
                                         <div class="form-group">
                                             <input type='hidden' id='ID_Edit' name='ID'>
-                                        </div>                                                                                               
+                                        </div>  
+                                        <div class='form-group'>
+                                            <label class='control-label col-md-3'>Category</label>
+                                            <div class='col-md-9'>
+                                                <select class='form-control' id='Category_Edit' name='Title'>
+                                                    <option value='championship'>World Food Championship</option>
+                                                    <option value='appetizer'>Appetizers</option>
+                                                    <option value='sweet_treat'>Sweet Treats</option>
+                                                    <option value='meat'>Meats</option>
+                                                    <option value='cocktail'>Cocktails</option>
+                                                    <option value='side_dish'>Side Dishes</option>
+                                                    <option value=''>None</option>
+                                                </select>
+                                            </div>
+                                        </div>                                                                                             
                                     </div>                                    
                                 </form>
                             </div>

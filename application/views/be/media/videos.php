@@ -90,10 +90,38 @@
                                                                             echo '<img src="' .base_url('assets/images/thumbnails/' . $resource['Thumbnail']).'" class="img-responsive" alt="">';
                                                                     ?>                                                                    
                                                                 </div>
-                                                                    
+                                                                <div class="profile-title">
+                                                                    <p>
+                                                                    <?php 
+                                                                        switch ($resource['Title']) {
+                                                                            case 'championship':
+                                                                                echo 'World Food Championships';
+                                                                                break;
+                                                                            case 'appetizer':
+                                                                                echo 'Appetizers';
+                                                                                break;
+                                                                            case 'sweet_treat':
+                                                                                echo 'Sweet Treats';
+                                                                                break;
+                                                                            case 'meat':
+                                                                                echo 'Meats';
+                                                                                break;
+                                                                            case 'cocktail':
+                                                                                echo 'Cocktails';
+                                                                                break;
+                                                                            case 'side_dish':
+                                                                                echo 'Side Dishes';
+                                                                                break;
+                                                                            case '':
+                                                                                echo 'None';
+                                                                        }                                                                        
+                                                                    ?>
+                                                                    </p>
+                                                                </div>   
                                                                 <!-- END SIDEBAR USERPIC -->
                                                                 <!-- SIDEBAR BUTTONS -->
-                                                                <div class="profile-buttons">                                                                    
+                                                                <div class="profile-buttons">         
+                                                                    <button type="button" class="btn btn-circle green btn-sm" onclick='editService(<?php echo $resource["ID"];?>)'>EDIT</button>                                                           
                                                                     <button type="button" class="btn btn-circle red btn-sm" onclick="deleteService(<?php echo $resource['ID'];?>)">DELETE</button>
                                                                 </div>
                                                                 <!-- END SIDEBAR BUTTONS -->
@@ -148,6 +176,20 @@
                                                 </div>
                                             </div>                                                                                     
                                         </div>
+                                        <div class='form-group'>
+                                            <label class='control-label col-md-3'>Category</label>
+                                            <div class='col-md-9'>
+                                                <select class='form-control' id='Category' name='Title'>
+                                                    <option value='championship'>World Food Championship</option>
+                                                    <option value='appetizer'>Appetizers</option>
+                                                    <option value='sweet_treat'>Sweet Treats</option>
+                                                    <option value='meat'>Meats</option>
+                                                    <option value='cocktail'>Cocktails</option>
+                                                    <option value='side_dish'>Side Dishes</option>
+                                                    <option value=''>None</option>
+                                                </select>
+                                            </div>
+                                        </div>
                                         <div class='form-group' id='YoutubeElement'>
                                             <label class='control-label col-md-3'>Youtube ID</label>
                                             <div class='col-md-9'>
@@ -174,6 +216,48 @@
                     <!-- /.modal-dialog -->
                 </div>
                 <!-- END ADD MODAL CONTENT BODY -->
+
+                <!-- BEGIN EDIT MODAL CONTENT BODY -->
+                <div class="modal fade" id="editModal" tabindex="-1" role="basic" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content" id='editPhotoModalContent'>
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                <h4 class="modal-title">Edit</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="" class="form-horizontal form-bordered" id='updateServiceForm' enctype="multipart/form-data">
+                                    <div class="form-body">                                        
+                                        <div class="form-group">
+                                            <input type='hidden' id='ID_Edit' name='ID'>
+                                        </div>  
+                                        <div class='form-group'>
+                                            <label class='control-label col-md-3'>Category</label>
+                                            <div class='col-md-9'>
+                                                <select class='form-control' id='Category_Edit' name='Title'>
+                                                    <option value='championship'>World Food Championship</option>
+                                                    <option value='appetizer'>Appetizers</option>
+                                                    <option value='sweet_treat'>Sweet Treats</option>
+                                                    <option value='meat'>Meats</option>
+                                                    <option value='cocktail'>Cocktails</option>
+                                                    <option value='side_dish'>Side Dishes</option>
+                                                    <option value=''>None</option>
+                                                </select>
+                                            </div>
+                                        </div>                                                                                             
+                                    </div>                                    
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn dark btn-outline" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn green" id='btnUpdate'>Update</button>
+                            </div>
+                        </div>
+                        <!-- /.modal-content -->
+                    </div>
+                    <!-- /.modal-dialog -->
+                </div>
+                <!-- END EDIT MODAL CONTENT BODY -->
 
                 <!-- BEGIN DEELTE MODAL CONTENT BODY -->
                 <div class="modal fade" id="deleteModal" tabindex="-1" role="basic" aria-hidden="true">

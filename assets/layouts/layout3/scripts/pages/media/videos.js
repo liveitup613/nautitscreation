@@ -98,33 +98,13 @@ function editService(ID) {
                 return;
             }
 
-            $('#imgPortfolio').attr('src', base_url + 'assets/images/photos/' + data.Attach);
+            $('#Category_Edit').val(data.Title);
             $('#editModal').modal('show');
 
         }
     });    
 }
 
-$('.portfolio-camera').click(function() {    
-    $('#Portfolio_Edit').click();
-});
-
-$('#Portfolio_Edit').change(function () {
-    readURL(this, $('#imgPortfolio'));
-});
-
-function readURL(input, avatar) {
-	if (input.files && input.files[0]) {
-		var reader = new FileReader();
-
-		reader.onload = function (e) {
-			$(avatar)
-				.attr('src', e.target.result);
-		};
-
-		reader.readAsDataURL(input.files[0]);
-	}
-}
 
 $('#btnUpdate').click(function() {
     $.ajax({
@@ -142,7 +122,7 @@ $('#btnUpdate').click(function() {
                 showErrorToastr(res.message);
         },
         error: function(err) {
-            showErrorToastr('Update Photo');
+            showErrorToastr('Update Video');
         }
     })
 });

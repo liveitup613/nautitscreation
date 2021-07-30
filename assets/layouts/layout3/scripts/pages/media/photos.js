@@ -3,6 +3,7 @@ var editedServiceID = 0;
 
 $('#btnAddNewModal').click(function() {
     $('#resource').val('');
+    $('#cateogyr').val('champion');
     $('#AddNewModal').modal('show');
 });
 
@@ -80,6 +81,7 @@ function editService(ID) {
             }
 
             $('#imgPortfolio').attr('src', base_url + 'assets/images/photos/' + data.Attach);
+            $('#Category_Edit').val(data.Title);
             $('#editModal').modal('show');
 
         }

@@ -86,7 +86,12 @@
                         <!-- start filter navigation -->
                         <ul class="portfolio-filter grid-filter nav nav-tabs justify-content-center border-0 text-uppercase font-weight-500 alt-font padding-6-rem-bottom md-padding-4-half-rem-bottom sm-padding-2-rem-bottom">
                             <li class="nav active"><a data-filter="*" href="#">All</a></li>
-                            <li class="nav"><a data-filter=".photo" href="#">Photos</a></li>
+                            <li class="nav"><a data-filter=".championship" href="#">World Food Championships</a></li>
+                            <li class="nav"><a data-filter=".appetizer" href="#">Appetizers</a></li>
+                            <li class="nav"><a data-filter=".sweet_treat" href="#">Sweet Treats</a></li>
+                            <li class="nav"><a data-filter=".meat" href="#">Meats</a></li>
+                            <li class="nav"><a data-filter=".cocktail" href="#">Cocktails</a></li>
+                            <li class="nav"><a data-filter=".side_dish" href="#">Side Dishes</a></li>
                             <li class="nav"><a data-filter=".video" href="#">Videos</a></li>                            
                         </ul>
                         <!-- end filter navigation -->
@@ -103,7 +108,7 @@
                                 if ($resource['Type'] == 'Photo') {
                             ?>
                             <!-- start portfolio item -->
-                            <li class="grid-item wow photo animate__fadeIn">
+                            <li class="grid-item wow photo <?php echo $resource['Title'];?> animate__fadeIn">
                                 <a href="<?php echo base_url('assets/images/photos/'. $resource['Attach']);?>" data-group="lightbox-gallery" class="lightbox-group-gallery-item">
                                     <div class="portfolio-box box-shadow-portfolio">
                                         <div class="portfolio-image bg-gradient-sky-blue-pink">
@@ -121,7 +126,7 @@
                                 else if ($resource['Type'] == 'Video') {                                   
                                 ?>                                                        
                             <!-- start portfolio item -->
-                            <li class="grid-item graphics video logos wow animate__fadeIn" data-wow-delay="0.4s">
+                            <li class="grid-item video <?php echo $resource['Title'];?> wow animate__fadeIn" data-wow-delay="0.4s">
                                 <?php
                                     if ($resource['Thumbnail'] == '')                                
                                         echo '<a href="https://www.youtube.com/watch?v='.$resource['Attach'].'" class="popup-youtube">';
