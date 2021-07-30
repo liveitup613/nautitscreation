@@ -34,6 +34,38 @@
         top: 4px;
         left: -30px;
     }
+
+    .floating-image {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.6);
+    }
+
+    .floating-left {
+        float:left; 
+        margin-right: 20px; 
+        margin-top: 10px;
+    }
+
+    .floating-right {
+        float:right; 
+        margin-left: 20px; 
+        margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        .floating-image {
+            width: 100vh;
+        }
+
+        .floating-left {
+            margin-right: 0px;
+        }
+
+        .floating-right {
+            margin-left: 0px;
+        }
+    }
     </style>
 </head>
 
@@ -227,9 +259,9 @@
                         
                         for ($i = 0; $i < $image_size; $i++) {
                             if ($i % 2 == 0)
-                                echo '<p style="float:left; margin-right: 20px; margin-top: 10px;"><img src="'.base_url('assets/images/photos/journey'.($i + 1).'.jpg').'" style="width: 300px; border-radius: 10px; box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.6);"></p>';
+                                echo '<p class="floating-left"><img class="floating-image" src="'.base_url('assets/images/photos/journey'.($i + 1).'.jpg').'"></p>';
                             else
-                                echo '<p style="float:right; margin-left: 20px; margin-top: 10px;"><img src="'.base_url('assets/images/photos/journey'.($i + 1).'.jpg').'" style="width: 300px; border-radius: 10px; box-shadow: 0px 5px 5px rgb(0, 0, 0, 0.6);"></p>';
+                                echo '<p class="floating-right"><img class="floating-image" src="'.base_url('assets/images/photos/journey'.($i + 1).'.jpg').'"></p>';
 
                             echo '<p style="margin:  0px;" class="text-black">';
 
