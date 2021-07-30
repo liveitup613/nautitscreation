@@ -53,7 +53,7 @@
         margin-top: 10px;
     }
 
-    @media only screen and (max-width: 767px) {
+    @media only screen and (max-width: 600px) {
         .floating-image {
             width: 100vh;
         }
