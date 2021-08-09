@@ -110,8 +110,9 @@
                                 <div class="panel-heading active-accordion">
                                     <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapse<?php echo $count;?>" aria-expanded="false">
                                         <div class="panel-title">
-                                            <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500"><?php echo $row['Name'];?></span>
-                                            <i class="indicator fas fa-angle-down text-fast-blue icon-extra-small"></i>
+                                            <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500"><?php echo $row['Name'];?></span>                                            
+                                                
+                                            <i class="indicator fas <?php echo $count == 1 ? "fa-angle-down" : "fa-angle-right";?> text-fast-blue icon-extra-small"></i>
                                         </div>
                                     </a>
                                 </div>
