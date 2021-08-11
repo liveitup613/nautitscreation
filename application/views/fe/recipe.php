@@ -120,10 +120,10 @@
                         <div class="col-12 col-lg-3 col-sm-6 md-margin-40px-bottom xs-margin-25px-bottom">
                             <span class="alt-font font-weight-500 d-block text-white margin-20px-bottom xs-margin-10px-bottom">Company</span>
                             <ul>
-                                <li><a href="#">About</a></li>
-                                <li><a href="#">Shop</a></li>
-                                <li><a href="#">Media</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="<?php echo base_url('about-me');?>">About</a></li>
+                                <li><a href="https://nauti-ts-creations.square.site/s/shop">Shop</a></li>
+                                <li><a href="<?php echo base_url('media');?>">Media</a></li>
+                                <li><a href="<?php echo base_url('contact-us');?>">Contact Us</a></li>
                             </ul>
                         </div>
                         <!-- end footer column -->

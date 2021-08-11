@@ -499,10 +499,10 @@
                 <div class="col-12 col-md-4 sm-margin-15px-bottom">
                     <ul
                         class="alt-font footer-horizontal-link d-flex flex-column flex-sm-row justify-content-center justify-content-md-start text-center text-uppercase text-small">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Media</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="<?php echo base_url('about-me');?>">About</a></li>
+                        <li><a href="https://nauti-ts-creations.square.site/s/shop">Shop</a></li>
+                        <li><a href="<?php echo base_url('media');?>">Media</a></li>
+                        <li><a href="<?php echo base_url('contact-us');?>">Contact Us</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-5 text-center text-center last-paragraph-no-margin">
