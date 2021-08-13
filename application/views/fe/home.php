@@ -437,8 +437,7 @@
                     <div
                         class="text-extra-dark-gray text-uppercase text-medium font-weight-600 alt-font letter-spacing-1px margin-10px-bottom">
                         Contact us</div>
-                    <p class="lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto"><?php echo $Contact[0]['Value'];?>
-                    </p>
+                    <p class="lg-w-100 md-w-60 sm-w-75 sm-margin-10px-bottom mx-auto">Corpus Christi, TX 78418</p>
                 </div>
                 <!-- end feature box item -->
                 <!-- start feature box item -->
