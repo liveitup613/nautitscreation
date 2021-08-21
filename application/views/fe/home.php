@@ -221,7 +221,7 @@
                                 class="align-self-start margin-20px-bottom" alt="" />
                             <h4
                                 class="alt-font font-weight-300 text-extra-dark-gray letter-spacing-minus-1px w-85 margin-3-rem-bottom xs-w-100 xs-margin-15px-bottom">
-                                Master Chef <span class="font-weight-600">message</span></h4>
+                                Island World food championship Chef's <span class="font-weight-600">message</span></h4>
                             <span
                                 class="text-large text-extra-dark-gray line-height-30px d-block w-75 margin-20px-bottom xs-margin-30px-bottom xl-w-80 xs-w-100">"For
                                 me, cooking is an expression of the land where you are and the culture of that
