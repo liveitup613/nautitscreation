@@ -142,10 +142,8 @@
                     <div
                         class="w-40px h-2px bg-gradient-orange-pink separator-line-vertical margin-30px-tb d-inline-block">
                     </div>
-                    <h3 class="alt-font font-weight-500 text-extra-dark-gray letter-spacing-minus-1px">We focus on
-                        producing creations with top <span class="text-gradient-orange-pink font-weight-600">quality
-                            fresh ingredients</span>, no additives or preservatives and <span
-                            class="text-gradient-orange-pink font-weight-600">hand crafted perfect delights</span></h3>
+                    <h3 class="alt-font font-weight-500 text-extra-dark-gray letter-spacing-minus-1px">We focus on producing <span class="text-gradient-orange-pink font-weight-600">hand crafted creations</span> in small batches using only top <span class="text-gradient-orange-pink font-weight-600">quality fresh ingredients</span>, no additives or preservatives
+                    </h3>
                 </div>
             </div>
         </div>
