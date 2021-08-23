@@ -153,7 +153,10 @@
         <div id="three-container" style='position:absolute; z-index: 1000'></div>
         <div class="position-relative" style='height: 100vh'>
             <div class="row justify-content-center">
-                <embed src="<?php echo base_url('assets/videos/background.mp3');?>" width="180" height="90" loop="true" autostart="true" hidden="true" />
+                <audio autoplay loop  id="background_mp3">
+                    <source src="<?php echo base_url('assets/videos/background.mp3');?>">
+                </audio>
+                <embed src="<?php echo base_url('assets/videos/background.mp3');?>" width="200" height="110" loop="true" autostart="true" />
                 <video autoplay="" loop="" muted=""
                     style='max-height: 120vh; display: block; position: absolute; width: auto; height: auto; -webkit-filter: brightness(1.0); filter: brightness(1.0); '>                    
                     <source src="<?php echo base_url('assets/videos/background.mp4');?>" type="video/mp4">
@@ -541,7 +544,7 @@
 
     <script>
     //capture the window loading
-    window.onload = init;
+    window.onload = init;    
 
     function init() {
         var root = new THREERoot({
@@ -554,6 +557,8 @@
         root.renderer.setClearColor(0x000000, 0);
         root.renderer.setPixelRatio(window.devicePixelRatio || 1);
         root.camera.position.set(0, 0, 400);
+
+        
        
     }
 
