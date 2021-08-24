@@ -124,13 +124,13 @@
                 <div class="row align-items-end justify-content-center">
                     <div class="col-12 offset-lg-2 col-lg-6 col-md-8 md-margin-50px-bottom">   
                         <h4 class="alt-font text-black font-weight-600">Stay in the Jam</h4>
-                        <form action="email-templates/contact-form.php" method="post" class="alt-font text-extra-dark-gray">
-                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="text" name="name" placeholder="Your name" />
-                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="email" name="email" placeholder="Your email address" />
-                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px" type="tel" name="phone" placeholder="Mobile no" />
-                            <textarea class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-35px-bottom border-radius-0px" name="comment" rows="5" placeholder="How can we help you?"></textarea>
+                        <form class="alt-font text-extra-dark-gray">
+                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="text" id="name" placeholder="Your name" />
+                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="email" id="email" placeholder="Your email address" />
+                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px" type="tel" id="phone" placeholder="Mobile no" />
+                            <textarea class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-35px-bottom border-radius-0px" id="comment" rows="5" placeholder="How can we help you?"></textarea>
                             <input type="hidden" name="redirect" value="">
-                            <button class="btn btn-medium btn-dark-gray mb-0 submit" type="submit">send message</button>
+                            <button class="btn btn-medium btn-dark-gray mb-0 submit" type="button" id='btnSendMessage'>send message</button>
                             <div class="form-results d-none"></div>
                         </form>                     
                     </div>
@@ -230,5 +230,22 @@
         <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/js/theme-vendors.min.js');?>"></script>
         <script type="text/javascript" src="<?php echo base_url('assets/js/main.js');?>"></script>
+        <script>
+            $('#btnSendMessage').click(function() {
+                $.ajax({
+                    url: "<?php echo base_url();?>" + "api/sendEmail",
+                    type: 'post',
+                    data: {
+                        name: $('#name').val(),
+                        email: $('#email').val(),
+                        phone: $('#phone').val(),
+                        message: $('#comment').val()
+                    },
+                    success: function(res) {
+                        alert(res);
+                    }
+                })
+            })
+        </script>
     </body>
 </html>

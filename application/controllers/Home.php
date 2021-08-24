@@ -183,8 +183,8 @@ class Home extends CI_Controller {
 			'protocol' => 'smtp',
 			'smtp_host' => 'ssl://smtp.googlemail.com',
 			'smtp_port' => 465,
-			'smtp_user' => 'systone.webcontacts@gmail.com',
-			'smtp_pass' => 'Systoneit$',
+			'smtp_user' => 'nautitscreations@gmail.com',
+			'smtp_pass' => 'TMG32274ldy#',
 			'mailtype' => 'html',
 			'charset' => 'iso-8859-1'
 			);
@@ -192,8 +192,8 @@ class Home extends CI_Controller {
 		$this->load->library('email', $config);		
 
 		$this->email->set_newline("\r\n");
-		$this->email->from('systone.webcontacts@gmail.com', 'Contact Us');
-		$this->email->to('contactus@systoneit.com');
+		$this->email->from('nautitscreations@gmail.com', 'Contact Us');
+		$this->email->to('nautitscreations@gmail.com');
 		$this->email->subject('Contact Us');
 
 		$cotent = "Name: <strong>".$name. "</strong><br>Phone: <strong>" . $phone . "</strong><br>Email: <strong>" .$email ."</strong><br>Message:<br><strong>". $message.'</strong>';

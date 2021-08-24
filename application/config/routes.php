@@ -79,6 +79,7 @@ $route['admin/logout'] = 'manageLogin/logout';
 
 // Apis
 
+$route['api/sendEmail'] = 'home/sendEmail';
 $route['api/guestbook/get'] = 'manageHome/getGuestBook';
 $route['api/guestbook/add'] = 'manageHome/addGuestBook';
 $route['api/guestbook/update'] = 'manageHome/updateGuestBook';
@@ -120,6 +121,4 @@ $route['api/job/update'] = 'manageCareer/updateJob';
 $route['api/job/get'] = 'manageCareer/getJob';
 
 $route['api/contactus/updateSummary'] = 'manageContactUs/updateSummary';
-
-$route['api/sendEmail'] = 'manageContactUs/sendEmail';
 $route['api/addLog'] = 'manageHome/addLog';
