@@ -125,10 +125,10 @@
                     <div class="col-12 offset-lg-2 col-lg-6 col-md-8 md-margin-50px-bottom">   
                         <h4 class="alt-font text-black font-weight-600">Stay in the Jam</h4>
                         <form class="alt-font text-extra-dark-gray">
-                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="text" id="name" placeholder="Your name" />
-                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="email" id="email" placeholder="Your email address" />
-                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px" type="tel" id="phone" placeholder="Mobile no" />
-                            <textarea class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-35px-bottom border-radius-0px" id="comment" rows="5" placeholder="How can we help you?"></textarea>
+                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required text-black" type="text" id="name" placeholder="Your name" />
+                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required text-black" type="email" id="email" placeholder="Your email address" />
+                            <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px text-black" type="tel" id="phone" placeholder="Mobile no" />
+                            <textarea class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-35px-bottom border-radius-0px text-black" id="comment" rows="5" placeholder="How can we help you?"></textarea>
                             <input type="hidden" name="redirect" value="">
                             <button class="btn btn-medium btn-dark-gray mb-0 submit" type="button" id='btnSendMessage'>send message</button>
                             <div class="form-results d-none"></div>
