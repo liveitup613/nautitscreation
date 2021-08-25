@@ -211,7 +211,7 @@
                             <a href="<?php echo base_url();?>" class="footer-logo"><img src="<?php echo base_url('assets/images/logo.svg');?>"></a>
                         </div>
                         <div class="col-12 col-md-6 text-center last-paragraph-no-margin sm-margin-20px-bottom">
-                            <p>Copyright&copy; Nauti T's Creation Ltd. | All rights reserved</p>
+                            <p>Copyright&copy; Nauti T's Creation LLC. | All rights reserved</p>
                         </div>
                         <div class="col-12 col-md-3 text-center text-md-right">
                             <div class="social-icon-style-12">

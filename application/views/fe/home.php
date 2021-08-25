@@ -509,7 +509,7 @@
                     </ul>
                 </div>
                 <div class="col-12 col-md-5 text-center text-center last-paragraph-no-margin">
-                    <p class="alt-font text-small text-uppercase">Copyright&copy; Nauti T's Creation Ltd. | All rights
+                    <p class="alt-font text-small text-uppercase">Copyright&copy; Nauti T's Creation LLC. | All rights
                         reserved</p>
                 </div>
                 <div class="col-12 col-md-3 text-center text-md-right">
